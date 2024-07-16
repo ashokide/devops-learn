@@ -15,12 +15,11 @@ echo $SHELL
 ### Pipes and Redirection
 
 Pipes
-
 ```
 cat sample.txt | wc
 ```
 
-Redirection
+Data Streams
 
 | Stream | Name |
 | ------ | ------ |
@@ -34,18 +33,26 @@ Output Redirection
 | ------ | ------ |
 | > | Overwrite |
 | >> | Append |
+
+Input Redirection
+| Symbol | Function |
+| ------ | ------ |
 | < | Input Redirection |
 | << | Here Document |
+
+<br>
+Example for redirecting output and input
+
 ```
 cat sample.txt 2> error.txt 1> output.txt
 ```
 
-Overwrite Mode
+Output Overwrite Mode
 ```
 ls > directory.txt
 ```
 
-Append Mode
+Output Append Mode
 ```
 ls >> directory.txt
 ```
@@ -62,6 +69,7 @@ some
 random
 multiline
 text
+EOF
 ```
 
 Interrupt
