@@ -254,6 +254,29 @@ echo 'the kernal is $(uname -r)'
 echo;
 
 # no new line at end
-# echo -n "hello world"
+echo -n "hello world"
 ```
 
+#### Variables - stores values
+
+```sh
+# no space between equal to sign
+string=Hello
+string2="Hello World"
+```
+
+```sh
+# read only variables
+declare -r PI=3.14
+
+# lowercase string
+declare -l string="Hello World" # Output: hello world
+
+# uppercase string
+declare -u string="Hello World" # Output: HELLO WORLD
+```
+
+```sh
+# To see all the declared variables in the current session
+declare -p
+```
