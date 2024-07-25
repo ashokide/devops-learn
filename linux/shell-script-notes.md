@@ -305,4 +305,23 @@ a=1
 ((a+=2))
 ```
 
+```sh
+# Interger Variable
+declare -i rollNo=13
+echo $b
+```
 
+```sh
+# Make floating point calculations
+echo $(echo "scale=3; 1/3" | bc)
+```
+
+```sh
+# Generates a random number
+echo $RANDOM
+```
+
+```sh
+# Generates a random number between 1 and 10
+echo $(( 1 + RANDOM % 10))
+```
