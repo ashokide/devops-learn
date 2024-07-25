@@ -214,3 +214,46 @@ echo $[4-3]
 echo $[6*2]
 echo $[4/5]
 ```
+
+#### Shebang
+
+```sh
+#!/usr/bin/env bash
+```
+
+#### Make shell script file executable 
+```sh
+chmod +x file-name.sh
+```
+
+#### Run the shell script
+```sh
+./file-name.sh
+```
+or
+
+```sh
+bash file-name.sh
+```
+
+#### echo - Print text to the standard output
+```sh
+echo hello world
+
+name=someone
+echo hello $name
+
+# Double Quotes
+echo "the current date time is $(date)"
+echo the \(current date time\) is $(date)
+
+# Single Quotes
+echo 'the kernal is $(uname -r)'
+
+# prints an empty line
+echo;
+
+# no new line at end
+# echo -n "hello world"
+```
+
