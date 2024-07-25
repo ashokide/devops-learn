@@ -325,3 +325,6 @@ echo $RANDOM
 # Generates a random number between 1 and 10
 echo $(( 1 + RANDOM % 10))
 ```
+
+#### [] is an alias for test
+It is used to test or evaluate expressions
