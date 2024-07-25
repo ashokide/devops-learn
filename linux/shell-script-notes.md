@@ -280,3 +280,29 @@ declare -u string="Hello World" # Output: HELLO WORLD
 # To see all the declared variables in the current session
 declare -p
 ```
+
+#### Supported Arithmetic Operations
+
+| Operation | Operator |
+| ------ | ------ |
+| + | Addition |
+| - | Subtraction |
+| * | Multiplication |
+| / | Division |
+| % | Modulo |
+| ** | Exponentiation |
+
+
+```sh
+# Arithmetic Expansion - Performs the calculations and return
+echo $(( (1+2) + (3-1) ))
+```
+
+```sh
+# Arithmetic Evaluation - Modifies the value in variable
+a=1
+((a++))
+((a+=2))
+```
+
+
