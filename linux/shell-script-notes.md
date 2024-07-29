@@ -465,12 +465,9 @@ echo "${employee[name]} has the employee id ${employee['employee id']}"
 
 ```
 
-
-#### If elif else statements
+#### Conditional Statements `if then elif else`
 
 Execute code based on conditions
-
-Examples
 
 ```sh
 a=5
@@ -484,4 +481,78 @@ then
 else
   echo "$a is less than 3"
 fi
+```
+
+#### Loops 
+
+##### While Loop
+
+Runs the statement as long as the condition is true
+
+```sh
+declare -i n=1
+while ((n<=5))
+do
+    echo "n is $n"
+    ((n++))
+done
+```
+
+##### Until Loop 
+
+Runs the statement as long as the condition is false
+
+```sh
+declare -i n=1
+while ((n!=6))
+do
+    echo "n is $n"
+    ((n++))
+done
+```
+
+##### For Loop 
+
+Iterates through the list of items, runs the statement once for each item
+
+```sh
+fruits=(apple orange kiwi jackfruit pineapple)
+for i in ${fruits[@]}
+do
+    echo "fruit : $i"
+done
+```
+
+```sh
+fruits=(apple orange kiwi jackfruit pineapple)
+for (( i=0; i<5; i++))
+do
+    echo "fruit : ${fruits[$i]}"
+done
+```
+
+```sh
+declare -A employee
+
+employee["name"]="Ashok Natarajan"
+employee["employee id"]=13
+
+for i in "${!employee[@]}"
+do
+    echo "$i : ${employee[$i]}"
+done
+```
+
+```sh
+# do not preserves space in names of items
+for i in $(ls)
+do 
+    echo "file found : $i"
+done
+
+# preserves space in names of items
+for i in *
+do 
+    echo "file found : $i"
+done
 ```
