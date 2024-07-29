@@ -556,3 +556,17 @@ do
     echo "file found : $i"
 done
 ```
+
+#### Switch Case
+Runs code when an input matches a condition
+
+```sh
+name=apple
+
+case $name in
+    apple) echo "$name is a fruit";;
+    tomato|potato) echo "$name is a vegetable";;
+    *) echo "$ is unknown";;
+esac
+
+```
