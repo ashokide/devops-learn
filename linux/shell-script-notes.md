@@ -359,3 +359,38 @@ Examples
 # invert test condition
 [ ! 4 -lt 5 ]; echo $?
 ```
+
+#### [[]] is an alias for extended test
+It is used to test or evaluate more than one expression
+
+Examples
+
+```sh
+# test for directory and file
+[[ -d /bin/ && -e /bin/bash ]];echo $? 
+
+# test with logical operator
+[[ -d /bin/ ]] && echo /bin/ is a directory
+
+# test with regex
+[[ "/bin" =~ /b.* ]];echo $?
+```
+
+#### Formatting and Styling text output
+echo -e .....
+
+It interprets escaped characters like \n, \t etc.,
+
+```sh
+echo -e "this \nis \na \nmulti-line \ntext"
+```
+
+#### Styled Text Output
+```sh
+RED_ON_GREEN='\033[31;42m'
+RESET='\033[0m'
+echo "${RED_ON_GREEN}Hello world${RESET}"
+```
+![image](https://github.com/user-attachments/assets/1aa76a37-64f1-4b45-bb79-d1bb71290a60)
+
+
