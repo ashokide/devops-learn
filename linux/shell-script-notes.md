@@ -464,3 +464,24 @@ employee["employee id"]=13
 echo "${employee[name]} has the employee id ${employee['employee id']}"
 
 ```
+
+
+#### If elif else statements
+
+Execute code based on conditions
+
+Examples
+
+```sh
+a=5
+b=10
+if [[ $a -gt $b ]]
+then
+  echo "$a is greater than $b"
+elif [[ $a -gt 3 ]]
+then
+  echo "$a is greater than 3"
+else
+  echo "$a is less than 3"
+fi
+```
