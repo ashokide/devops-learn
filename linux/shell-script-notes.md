@@ -326,7 +326,7 @@ echo $RANDOM
 echo $(( 1 + RANDOM % 10))
 ```
 
-#### [] is an alias for test
+#### `[...]` is an alias for test
 It is used to test or evaluate expressions
 
 ```sh
@@ -360,7 +360,7 @@ Examples
 [ ! 4 -lt 5 ]; echo $?
 ```
 
-#### [[]] is an alias for extended test
+#### `[[...]]` is an alias for extended test
 It is used to test or evaluate more than one expression
 
 Examples
@@ -377,7 +377,7 @@ Examples
 ```
 
 #### Formatting and Styling text output
-echo -e .....
+`echo -e .....`
 
 It interprets escaped characters like \n, \t etc.,
 
@@ -386,6 +386,7 @@ echo -e "this \nis \na \nmulti-line \ntext"
 ```
 
 #### Styled Text Output
+
 ```sh
 RED_ON_GREEN='\033[31;42m'
 RESET='\033[0m'
@@ -393,4 +394,73 @@ echo "${RED_ON_GREEN}Hello world${RESET}"
 ```
 ![image](https://github.com/user-attachments/assets/1aa76a37-64f1-4b45-bb79-d1bb71290a60)
 
+#### Formatting output with `printf`
+Outputs text using placeholders and formatting
+```sh
+printf "Kernel : %s \n" $(uname -r)
 
+printf "Sum of 1 + 2 and 3 + 4 is %d and %d \n" $(( 1 + 2 )) $(( 3 + 4))
+
+# right aligned text
+printf "%10s : %10s\n" task "shell scripting"
+
+# left aligned text and numbers padded with zero's
+printf "%-10s : %05d\n" rollno 13
+
+# get the date time in epoch
+echo $(date +%s)
+
+# formatting with date
+printf "Date is %(%d-%m-%y)T \n" $(date +%s)
+```
+
+#### Indexed Arrays
+
+Store collection of elements
+
+Examples
+```sh
+
+# declare arrays
+fruits=(apple orange banana grapes jackfruit)
+states=("tamil nadu" "andhra pradhesh" "himachal pradhesh")
+
+declare -a fruits=(apple orange banana grapes jackfruit)
+
+# get the value based on index
+echo ${fruits[0]}
+
+# get all the values
+echo ${fruits[@]}
+
+# get the length of array
+echo ${#fruits[@]}
+
+# append the values
+fruits+="guava"
+
+# insert value at indexed position
+fruits[10]="musk melon"
+
+# loop through all the elements
+for i in {0..10}; do printf "index : %d \t value : %10s \n" $i "${fruits[$i]}"; done
+
+```
+
+#### Associative Arrays
+
+Store `Key Value` pairs
+
+Examples
+```sh
+
+# declare associative arrays
+declare -A employee
+
+# insert values
+employee[name]="Ashok Natarajan"
+employee["employee id"]=13
+
+echo "${employee[name]} has the employee id ${employee['employee id']}"
+
+```
