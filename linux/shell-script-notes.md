@@ -570,3 +570,55 @@ case $name in
 esac
 
 ```
+
+#### Functions 
+It allows to call a set of code repeatedly
+
+Newer Representation<br>
+`fname() {
+  ...
+}`
+
+Older Representation<br>
+`function fname {
+  ...
+}`
+
+```sh
+# $FUNCNAME - get the function name
+# $@ get the list of args passed
+
+list_files() {
+    echo "inside $FUNCNAME"
+    for i in "$@"
+    do
+        echo "file found : $i"
+    done
+}
+
+list_files /*
+```
+
+```sh
+# local variables
+global_var=10
+
+local_variables() {
+    local local_var=10
+    echo "local variable (inside function) : $local_var"
+}
+
+local_variables
+
+echo "global variable : $global_var"
+echo "local variable : $local_var"
+```
+
+```sh
+# older representation
+function greetings {
+    echo "hello $1"
+}
+
+greetings ashok
+```
