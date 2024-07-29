@@ -328,3 +328,39 @@ echo $(( 1 + RANDOM % 10))
 
 #### [] is an alias for test
 It is used to test or evaluate expressions
+
+```sh
+# To know more about test
+help test
+```
+Test return code
+* 0 -> success
+* 1 -> failure
+
+Examples
+```sh
+# test directory
+[ -d /bin/bash ]; echo $?
+
+# test file
+[ -e /bin/bash ]; echo $?
+
+# test string
+[ "cat" = "dog" ]; echo $?
+
+# test number
+[ 4 -lt 5 ]; echo $?
+
+# invert test condition
+[ ! 4 -lt 5 ]; echo $?
+```
+
+
+
+
+
+
+
+
+
+
