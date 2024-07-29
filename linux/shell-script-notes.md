@@ -644,3 +644,84 @@ do
     echo $line
 done < output.txt
 ```
+
+#### Arguments 
+Arguments passed through command line
+
+```sh
+sh ./file.sh arg1 arg2 arg3
+```
+
+```sh
+echo "Arguments passed : $@"
+echo "Arguments length : $#"
+echo "File name : $0 "
+
+for i in "$@"
+do 
+    echo $i
+done
+```
+
+#### Optional Arguments
+Pass data into script from command line
+```sh
+while getopts u:p: options;
+do
+    case $options in
+        u) user=$OPTARG;;
+        p) password=$OPTARG;;
+    esac
+done
+
+echo "user: $user / password: $password"
+```
+
+#### Read input
+`read` used to get input from the user in command line
+
+```sh
+# -p is give prompt to the user
+read -p "enter your username :" username
+
+
+# -s is to secure the input typed
+read -s -p "enter your password :" password
+
+echo -e "\nusername: $username / password: $password"
+```
+
+#### Select an input
+Provides a list of options and get input
+```sh
+select option in apple tomato spinach
+do 
+    case $option in
+        apple) echo "$option is a fruit";;
+        tomato) echo "$option is a vegetable";;
+        spinach) echo "$option is a leafy vegetable";;
+        *) echo "$option is not known"
+    esac
+done
+```
+
+#### Ensure user response
+
+`-e` allows to insert default input into edit buffer
+`-i` to give default input and a choice to user to edit it
+
+```sh
+read -ep "Enter a color: " -i "Blue" color
+echo $color
+```
+
+#### Troubleshooting
+
+`-x` to debug the script
+`-e` to exit the script when error
+`-o` to exit the script when pipeline fails
+
+Check for tools that script uses
+```sh
+[[ ! -a $(which nmap) ]] && echo -e "script uses nmap tool and it is not found on the system.\nExiting..." && exit
+```
