@@ -693,6 +693,7 @@ echo -e "\nusername: $username / password: $password"
 
 #### Select an input
 Provides a list of options and get input
+
 ```sh
 select option in apple tomato spinach
 do 
@@ -707,8 +708,8 @@ done
 
 #### Ensure user response
 
-`-e` allows to insert default input into edit buffer
-`-i` to give default input and a choice to user to edit it
+* `-e` allows to insert default input into edit buffer
+* `-i` to give default input and a choice to user to edit it
 
 ```sh
 read -ep "Enter a color: " -i "Blue" color
@@ -717,9 +718,9 @@ echo $color
 
 #### Troubleshooting
 
-`-x` to debug the script
-`-e` to exit the script when error
-`-o` to exit the script when pipeline fails
+* `-x` to debug the script
+* `-e` to exit the script when error
+* `-o` to exit the script when pipeline fails
 
 Check for tools that script uses
 ```sh
