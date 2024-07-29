@@ -337,6 +337,11 @@ Test return code
 * 0 -> success
 * 1 -> failure
 
+To get the last executed command's return code
+```sh
+echo $?
+```
+
 Examples
 ```sh
 # test directory
@@ -354,13 +359,3 @@ Examples
 # invert test condition
 [ ! 4 -lt 5 ]; echo $?
 ```
-
-
-
-
-
-
-
-
-
-
