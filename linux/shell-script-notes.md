@@ -622,3 +622,25 @@ function greetings {
 
 greetings ashok
 ```
+
+#### Write Files
+Write content into files
+
+```sh
+for i in {1..5}
+do
+    echo "this is line $i" >> output.txt
+done
+
+cat output.txt
+```
+
+#### Read Files
+Read content from files
+
+```sh
+while read line
+do
+    echo $line
+done < output.txt
+```
