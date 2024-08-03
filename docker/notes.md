@@ -200,6 +200,11 @@ docker kill <container-id>
 docker run -d <image-name>
 ```
 
+#### Remove container automatically once stopped
+```
+docker run --rm <image-name>
+```
+
 #### Interact with running container
 ```
 docker exec <container-id> <executable>
