@@ -24,50 +24,50 @@ curl -fsSL https://get.docker.com/ | sh
 sudo usermod -aG docker $USER
 ```
 
-#### To check `docker version` (Client and Server Version)
+#### Check `docker version` (Client and Server Version)
 ```
 docker version
 ```
 
-#### To check `docker version` (Client Version)
+#### Check `docker version` (Client Version)
 ```
 docker --version
 ```
 
-#### To test docker
+#### Test docker
 ```
 # hello-world is an image
 # run will create and start container from the image given
 docker run hello-world
 ```
 
-#### To get help
+#### Get help
 ```
 docker --help
 ```
 
-#### To create container
+#### Create container
 ```
 docker container create <image-name>
 ```
 
-#### To check the created/running/exited container
+#### Check the created/running/exited container
 ```
 # -a option will provide all containers (running + non-running)
 docker ps -a
 ```
 
-#### To start the container 
+#### Start the container 
 ```
 docker container start <container-id>
 ```
 
-#### To check the logs of container
+#### Check the logs of container
 ```
 docker logs <container-id>
 ```
 
-#### To attach the container's output to terminal
+#### Attach the container's output to terminal
 ```
 docker container start --attach <container-id>
 ```
@@ -195,7 +195,94 @@ docker images
 docker kill <container-id>
 ```
 
-#### To run container in `detached` mode
+#### Run container in `detached` mode
 ```
 docker run -d <image-name>
+```
+
+#### Interact with running container
+```
+docker exec <container-id> <executable>
+```
+
+`--interactive` or `-i` transfer the input into container<br>
+`--tty` or `-t` container's output is attached to your terminal<br>
+``` 
+docker exec --interactive --tty <container-id> <executable>
+```
+
+Example
+
+```
+docker exec -it d1335ce71f54af59e0ba91a52cd0dba9bb9670c90d438798847516aa19562746 bash
+```
+To Exit
+`
+ctrl + d
+`
+
+#### Stop running container
+```
+# docker gracefully stops the container
+docker stop <container-id>
+
+# docker stops the container immediately
+# `-t` is the time to stop the container
+docker stop -t 0 <container-id>
+```
+
+#### Remove stopped container
+```
+docker rm <container-id>
+```
+
+#### Remove running container
+```
+docker rm -f <container-id>
+```
+
+#### List all Container Id
+```
+docker ps -aq
+```
+
+#### Kill all containers
+```
+docker ps -aq | xargs docker rm
+```
+
+#### Remove Image
+```
+docker rmi <image-name>
+```
+
+#### Expose Port
+```
+docker run -p <host-port>:<container-port> <image-name>
+```
+
+Example
+```
+docker run -p 8080:80 nginx
+```
+
+#### Persist Data
+```
+docker run -v <host-path>:<container-path> <image-name> 
+```
+
+#### Docker Hub Login
+```
+docker login -u <username> -p <password>
+```
+
+#### Push Image
+> Before pushing the image, make sure the image has proper tag e.g., `<username>/<image-name:version>`
+```
+docker push <dockerhub-username>/<image-name:version>
+```
+
+#### Pull Image
+```
+docker pull <image-name>
 ```
