@@ -16,21 +16,29 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/get-data", async (req, res) => {
-  const dbName = "three-tier-db";
-  const db = client.db(dbName);
-  const collection = db.collection("list-of-fruits");
-  const result = await collection.find({}).toArray();
-  res.status(200).send(result);
+  try {
+    const dbName = "three_tier_db";
+    const db = client.db(dbName);
+    const collection = db.collection("list_of_fruits");
+    const result = await collection.find({}).toArray();
+    res.status(200).send(result);
+  } catch (err) {
+    res.status(400).send(err);
+  }
 });
 
 app.get("/set-data", async (req, res) => {
-  const dbName = "three-tier-db";
-  const db = client.db(dbName);
-  const collection = db.collection("list-of-fruits");
-  const insertedResult = await collection.insertMany(jsonData);
-  res.status(200).json({
-    insertedResult,
-  });
+  try {
+    const dbName = "three_tier_db";
+    const db = client.db(dbName);
+    const collection = db.collection("list_of_fruits");
+    const insertedResult = await collection.insertMany(jsonData);
+    res.status(200).json({
+      insertedResult,
+    });
+  } catch (err) {
+    res.status(400).send(err);
+  }
 });
 
 app.listen(PORT, async () => {
