@@ -296,6 +296,10 @@ docker login -u <username> -p <password>
 ```
 docker push <dockerhub-username>/<image-name:version>
 ```
+#### Search Image
+```
+docker search <image-name>
+```
 
 #### Pull Image
 ```
