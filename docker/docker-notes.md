@@ -8,6 +8,11 @@ Docker uses images and containers to allow apps to run anywhere
 
 Docker uses a client-server architecture
 
+## Best Practices
+* Use Verfied Images / Container Image Scanner
+* Avoid Latest tag
+* Use Non-root user
+
 #### Install docker in linux environment (Ubuntu)
 ```
 # ensure that you have the command line utility cURL
@@ -308,4 +313,9 @@ docker system prune
 #### To check container stats
 ```
 docker stats <container-id>
+```
+
+#### To get more information about container
+```
+docker inspect <container-id>
 ```
