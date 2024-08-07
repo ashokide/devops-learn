@@ -17,29 +17,29 @@
 
 ```yaml
 services:
-  service-name:
+  service_name:
     build:
-      context: <path-to-dockerfile>
+      context: <path_to_dockerfile>
       args:
         - <key>=<value>
         - <key>=<value>
     ports:
-      - "<source-port>:<destination-port>"
+      - "<source_port>:<destination_port>"
     environment:
       - "<key>=${env_file}"
       - <key>=<value>
     depends_on:
-      - <service-name>
+      - <service_name>
     profiles:
-      - <profile-name> # named subnets of service
+      - <profile_name> # named subnets of service
 
-  service-name:
-    image: <image-name>
+  service_name:
+    image: <image_name>
     env_file:
       - <path-to-env-file>
     volumes:
-      - <source-path>:<destination-path>:<file-mode>
-      - <volume-name>:<destination-path>:<file-mode>
+      - <host_path>:<container_path>:<file_mode>
+      - <host_path>:<container_path>:<file_mode>
 volumes:
   <volume-name>:
 ```
@@ -57,3 +57,12 @@ docker compose --env-file <env-file-path> <command>
 ## File Modes
 * rw
 * ro
+
+## Bind Mount
+```
+  volumes:
+    - type: bind
+      source: <host_path>
+      target: <container_path>
+      read_only: true
+```
