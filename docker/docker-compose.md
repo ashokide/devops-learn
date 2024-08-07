@@ -11,7 +11,7 @@
 * docker compose start
 * docker compose stop
 * docker compose restart
-* docker compose --profile `profile-name` up
+* docker compose --profile `profile-name` command
 
 ## Services
 
