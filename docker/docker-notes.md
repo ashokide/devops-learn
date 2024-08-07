@@ -46,6 +46,7 @@ docker run hello-world
 docker --help
 ```
 
+## Containers
 #### Create container
 ```
 docker container create <image-name>
@@ -79,15 +80,87 @@ docker run <image-name>
 
 > Note: docker run => docker container create + docker container start + docker container attach
 
-#### Create Dockerfile
+#### Kill running container
+```
+docker kill <container-id>
+```
 
+#### Run container in `detached` mode
+```
+docker run -d <image-name>
+```
+
+#### Remove container automatically once stopped
+```
+docker run --rm <image-name>
+```
+
+## Interact with running container
+```
+docker exec <container-id> <executable>
+```
+
+`--interactive` or `-i` transfer the input into container<br>
+`--tty` or `-t` container's output is attached to your terminal<br>
+``` 
+docker exec --interactive --tty <container-id> <executable>
+```
+
+Example
+
+```
+docker exec -it d1335ce71f54af59e0ba91a52cd0dba9bb9670c90d438798847516aa19562746 bash
+```
+To Exit
+`
+ctrl + d
+`
+
+#### Stop running container
+```
+# docker gracefully stops the container
+docker stop <container-id>
+
+# docker stops the container immediately
+# `-t` is the time to stop the container
+docker stop -t 0 <container-id>
+```
+
+#### Remove stopped container
+```
+docker rm <container-id>
+```
+
+#### Remove running container
+```
+docker rm -f <container-id>
+```
+
+#### List all Container Id
+```
+docker ps -aq
+```
+
+#### Remove all containers
+```
+docker ps -aq | xargs docker rm
+```
+
+## Images
+#### List images
+```
+docker images
+```
+
+## Custom Docker Image
+#### Create Dockerfile
 * Navigate to project directory
 * Create a new file and name it `Dockerfile` (no file extension)
 * Open the Dockerfile in any editor
   
 <img src="https://github.com/user-attachments/assets/971ce091-9f89-4822-b0a8-875186455417" width="30%">
 
-#### Dockerfile Instructions
+## Dockerfile Instructions
 #### `FROM` instruction specifies the base image for the container
 ```
 FROM <base-image:tag>
@@ -163,7 +236,7 @@ Example
 ENV 9000
 ```
 
-#### Build Docker image
+## Build Docker image
 ```
 # .(period) refers to the context (folder) containing the files
 # By default, it will be build using the file called `Dockerfile`
@@ -185,83 +258,15 @@ Example
 docker tag my-webserver my-webserver:0.0.1
 ```
 
-#### List images
-```
-docker images
-```
-
-#### Kill running container
-```
-docker kill <container-id>
-```
-
-#### Run container in `detached` mode
-```
-docker run -d <image-name>
-```
-
-#### Remove container automatically once stopped
-```
-docker run --rm <image-name>
-```
-
-#### Interact with running container
-```
-docker exec <container-id> <executable>
-```
-
-`--interactive` or `-i` transfer the input into container<br>
-`--tty` or `-t` container's output is attached to your terminal<br>
-``` 
-docker exec --interactive --tty <container-id> <executable>
-```
-
-Example
-
-```
-docker exec -it d1335ce71f54af59e0ba91a52cd0dba9bb9670c90d438798847516aa19562746 bash
-```
-To Exit
-`
-ctrl + d
-`
-
-#### Stop running container
-```
-# docker gracefully stops the container
-docker stop <container-id>
-
-# docker stops the container immediately
-# `-t` is the time to stop the container
-docker stop -t 0 <container-id>
-```
-
-#### Remove stopped container
-```
-docker rm <container-id>
-```
-
-#### Remove running container
-```
-docker rm -f <container-id>
-```
-
-#### List all Container Id
-```
-docker ps -aq
-```
-
-#### Kill all containers
-```
-docker ps -aq | xargs docker rm
-```
-
 #### Remove Image
 ```
 docker rmi <image-name>
+
+# Force delete
+docker rmi -f <image-name>
 ```
 
-#### Expose Port
+## Expose Port
 ```
 docker run -p <host-port>:<container-port> <image-name>
 ```
@@ -271,12 +276,12 @@ Example
 docker run -p 8080:80 nginx
 ```
 
-#### Persist Data
+## Persist Data (Volumes)
 ```
 docker run -v <host-path>:<container-path> <image-name> 
 ```
 
-#### Docker Hub Login
+## Docker Hub Login
 ```
 docker login -u <username> -p <password>
 ```
@@ -290,4 +295,17 @@ docker push <dockerhub-username>/<image-name:version>
 #### Pull Image
 ```
 docker pull <image-name>
+```
+
+#### System Prune
+Removes all stopped containers, all unused networks, all dangling images, all unused build cache
+```
+docker system prune 
+```
+
+## Other Commands
+
+#### To check container stats
+```
+docker stats <container-id>
 ```
