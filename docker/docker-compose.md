@@ -41,17 +41,17 @@ services:
       - <host_path>:<container_path>:<file_mode>
       - <host_path>:<container_path>:<file_mode>
 volumes:
-  <volume-name>:
+  <volume_name>:
 ```
 
 ## Multiple Compose Files
 ```
-docker compose -f <compose-file.yaml> -f <compose-file.override.yaml> <command>
+docker compose -f <compose_file.yaml> -f <compose_file.override.yaml> <command>
 ```
 
 ## Load Env File 
 ```
-docker compose --env-file <env-file-path> <command>
+docker compose --env-file <env_file_path> <command>
 ```
 
 ## File Modes
