@@ -15,3 +15,8 @@ ls -altr <path>
 ```
 cd <path>
 ```
+
+### `pwd` -> display the current working directory's full path
+```
+pwd
+```
