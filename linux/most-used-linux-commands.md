@@ -20,3 +20,11 @@ cd <path>
 ```
 pwd
 ```
+
+### `mkdir` -> make directory
+```
+# -p create parent directory if not found
+
+mkdir -p <parent-directory-name>/<new-directory-name>
+mkdir <new-directory-name>
+```
