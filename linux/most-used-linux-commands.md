@@ -78,3 +78,9 @@ nano <filename>
 
 # ctrl + x to close
 ```
+
+### `grep` -> search for given pattern/text in file
+```
+# -i ignore case
+grep -i <pattern> <file>
+```
