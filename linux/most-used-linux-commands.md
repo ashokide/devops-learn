@@ -28,3 +28,10 @@ pwd
 mkdir -p <parent-directory-name>/<new-directory-name>
 mkdir <new-directory-name>
 ```
+
+### `rm` -> remove files or directories
+```
+# -r delete files inside directory recursively
+# -f force delete without prompt
+rm -rf <file/directory>
+```
