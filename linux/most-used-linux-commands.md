@@ -71,3 +71,10 @@ touch -m <filename>
 # print file content
 cat <filename>
 ```
+
+### `nano` -> text file editor
+```
+nano <filename>
+
+# ctrl + x to close
+```
