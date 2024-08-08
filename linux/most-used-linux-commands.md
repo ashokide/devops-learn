@@ -43,3 +43,12 @@ rm -rf <file/directory>
 
 cp -r <file/directory>
 ```
+
+### `mv` -> move/rename files or directories
+```
+# move
+mv <source> <destination>
+
+# rename
+mv <old-name> <new-name>
+```
