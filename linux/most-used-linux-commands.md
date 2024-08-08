@@ -1,6 +1,6 @@
 ## Linux Commands
 
-### `ls` -> list files and directories
+#### 1) `ls` -> list files and directories
 ```sh
 # -a list all files including hidden files 
 # -l list files and directories with file permissions and other informations
@@ -11,17 +11,17 @@
 ls -altr <path>
 ```
 
-### `cd` -> change directory
+#### 2) `cd` -> change directory
 ```sh
 cd <path>
 ```
 
-### `pwd` -> display the current working directory's full path
+#### 3) `pwd` -> display the current working directory's full path
 ```sh
 pwd
 ```
 
-### `mkdir` -> make directory
+#### 4) `mkdir` -> make directory
 ```sh
 # -p create parent directory if not found
 
@@ -29,7 +29,7 @@ mkdir -p <parent-directory-name>/<new-directory-name>
 mkdir <new-directory-name>
 ```
 
-### `rm` -> remove files or directories
+#### 5) `rm` -> remove files or directories
 ```sh
 # -r delete files inside directory recursively
 # -f force delete without prompt
@@ -37,14 +37,14 @@ mkdir <new-directory-name>
 rm -rf <file/directory>
 ```
 
-### `cp` -> copy files or directories
+#### 6) `cp` -> copy files or directories
 ```sh
 # -r copy files inside directory recursively
 
 cp -r <file/directory>
 ```
 
-### `mv` -> move/rename files or directories
+#### 7) `mv` -> move/rename files or directories
 ```sh
 # move
 mv <source> <destination>
@@ -53,7 +53,7 @@ mv <source> <destination>
 mv <old-name> <new-name>
 ```
 
-### `touch` -> create files/change access time or modification time
+#### 8) `touch` -> create files/change access time or modification time
 ```sh
 # create file
 touch <filename>
@@ -65,28 +65,28 @@ touch -a <filename>
 touch -m <filename>
 ```
 
-### `cat` -> concatenate files and display the content
+#### 9) `cat` -> concatenate files and display the content
 ```sh
 # print file content
 
 cat <filename>
 ```
 
-### `nano` -> text file editor
+#### 10) `nano` -> text file editor
 ```sh
 nano <filename>
 
 # ctrl + x to close
 ```
 
-### `grep` -> search for given pattern/text in file
+#### 11) `grep` -> search for given pattern/text in file
 ```sh
 # -i ignore case
 
 grep -i <pattern> <file>
 ```
 
-### `find` -> search for files and directories 
+#### 12) `find` -> search for files and directories 
 ```sh
 # -name file/directory to be searched
 
