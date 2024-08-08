@@ -52,3 +52,16 @@ mv <source> <destination>
 # rename
 mv <old-name> <new-name>
 ```
+
+### `touch` -> create files/change access time or modification time
+```
+# create file
+touch <filename>
+
+#change access time
+touch -a <filename>
+
+
+#change modification time
+touch -m <filename>
+```
