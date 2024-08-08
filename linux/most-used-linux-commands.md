@@ -33,5 +33,13 @@ mkdir <new-directory-name>
 ```
 # -r delete files inside directory recursively
 # -f force delete without prompt
+
 rm -rf <file/directory>
+```
+
+### `cp` -> copy files or directories
+```
+# -r copy files inside directory recursively
+
+cp -r <file/directory>
 ```
