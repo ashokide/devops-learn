@@ -65,3 +65,9 @@ touch -a <filename>
 #change modification time
 touch -m <filename>
 ```
+
+### `cat` -> concatenate files and display the content
+```
+# print file content
+cat <filename>
+```
