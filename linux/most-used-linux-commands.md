@@ -100,5 +100,14 @@ find <path-to-search> -name <file-name/directory-name>
 # example 400 -> read only for owner
 # example 777 -> read, write, execute for owner, group, others
 
+# -R change permissions for all files and directories recursively
+
 chmod <permissions> <file-name>
+```
+
+#### 13) `chown` -> change file ownership
+```sh
+# -R change ownership for all files and directories recursively
+
+chown -R <user>:<group> <file-name>
 ```
