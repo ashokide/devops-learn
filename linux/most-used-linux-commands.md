@@ -92,3 +92,13 @@ grep -i <pattern> <file>
 
 find <path-to-search> -name <file-name/directory-name>
 ```
+
+#### 13) `chmod` -> change file permissions
+```sh
+# <permissions>
+# 4 - read, 2 - write, 1 - execute
+# example 400 -> read only for owner
+# example 777 -> read, write, execute for owner, group, others
+
+chmod <permissions> <file-name>
+```
