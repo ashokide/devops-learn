@@ -161,3 +161,13 @@ pgrep <process-name>
 # -O output filename
 wget -O <filename> <url>
 ```
+
+#### 17) `curl` -> transferring data to and from a web server
+```sh
+# -X http request type
+# -H custom header
+# -d data
+# -o output file
+
+curl -X POST -H "Content-Type: application/json" -d '{"key":"value"}' https://api.example.com/endpoint
+```
