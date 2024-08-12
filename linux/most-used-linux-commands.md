@@ -249,3 +249,10 @@ scp -i <private-key> <username>@<host-address>:<path-to-store-file>
 rsync -azv <file/directory-to-sync> <username>@<host-address>:<path-to-store-files>
 ```
 
+#### 24) `df` -> disk free space
+```sh
+# -h human readable format
+# / root disk
+df -h
+df / -h
+```
