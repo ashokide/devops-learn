@@ -181,6 +181,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"key":"value"}' https://ap
 # -t list
 # -d delete
 # -r append
+# -u update
 
 tar -cvf <compressed-file>
 tar -xvf <compressed-file>
@@ -188,5 +189,6 @@ tar -xvf <compressed-file>
 tar -tvf <compressed-file>
 
 tar -d -f <compressed-file> <file>
+tar -u -f <compressed-file> <file>
 tar -r -f <compressed-file> <file>
 ```
