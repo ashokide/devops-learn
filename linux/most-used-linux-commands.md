@@ -406,3 +406,8 @@ atrm <job-id>
 # -c count of packets to be sent
 ping -c <count> <destination-address>
 ```
+
+#### 34) `traceroute` -> trace route - trace the route packets to reach the destination
+```sh
+traceroute <destination-address>
+```
