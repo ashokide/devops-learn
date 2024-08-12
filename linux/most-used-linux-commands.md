@@ -335,5 +335,27 @@ more efficient and scalable than `netstat` and is part of `iproute2` package
 sudo ss -tulpn
 ```
 
+#### 29) `systemctl` -> manage system services
+```sh
+# Starts a service
+systemctl start <service-name>
 
+# Stops a service
+systemctl stop <service-name>
+
+# Restarts a service
+systemctl restart <service-name>
+
+# Enables a service to start at boot time
+systemctl enable <service-name>
+
+# Disables a service from starting at boot time
+systemctl disable <service-name>
+
+# Displays the status of a service
+systemctl status <service-name>
+
+# Lists all available services
+systemctl list-units
+```
 
