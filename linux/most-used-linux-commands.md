@@ -399,5 +399,10 @@ at -c <job-id>
 
 # remove jobs from queue
 atrm <job-id>
+```
 
+#### 33) `ping` -> check network connectivity
+```sh
+# -c count of packets to be sent
+ping -c <count> <destination-address>
 ```
