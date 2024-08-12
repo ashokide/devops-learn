@@ -267,10 +267,32 @@ du -sh <file/directory>
 
 #### 25) `ifconfig` -> displays information about all network interfaces
 ```sh
-ifconfig -a # list of all interfaces and their informations
+# list of all interfaces and their informations
+ifconfig -a
 
+# make interfaces up/down
 ifconfig <interface-name> up
 ifconfig <interface-name> down
 
+# set ip address to interface
 ifconfig <interface-name> <ip-address> netmask <subnet>
+```
+
+#### 26) `ip` -> displays information about all network interfaces
+```sh
+# list of all interfaces and their informations
+ip addr show
+
+# set ip address to interface
+ip addr add 192.168.1.100/24 brd 192.168.1.255 dev eth0
+
+# remove ip address to interface
+ip addr del 192.168.1.100/24 dev eth0
+
+# make interfaces up/down
+ip link set <interface-name> up
+ip link set <interface-name> down
+
+# view route tables
+ip route
 ```
