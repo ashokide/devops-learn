@@ -296,3 +296,33 @@ ip link set <interface-name> down
 # view route tables
 ip route
 ```
+
+#### 27) `ip` -> displays information about all network interfaces
+```sh
+# list of all interfaces and their informations
+ip addr show
+
+# set ip address to interface
+ip addr add 192.168.1.100/24 brd 192.168.1.255 dev eth0
+
+# remove ip address to interface
+ip addr del 192.168.1.100/24 dev eth0
+
+# make interfaces up/down
+ip link set <interface-name> up
+ip link set <interface-name> down
+
+# view route tables
+ip route
+```
+
+#### 28) `netstat` -> network statistics 
+``` 
+# t - tcp connections
+# u - udp connections
+# l - listening sockets
+# p - display pid/process name
+# n - display numeric address and port number
+
+sudo netstat -tulpn
+```
