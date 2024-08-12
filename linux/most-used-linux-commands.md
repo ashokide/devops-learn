@@ -385,3 +385,19 @@ systemctl status crond
 cat /var/log/syslog
 cat /var/log/cron
 ```
+
+#### 32) `at` -> schedule jobs at specific time
+```sh
+# create a scheduled job
+at <time>
+
+# view the list of scheduled jobs including the job id
+atq
+
+# view the contents of specific job
+at -c <job-id>
+
+# remove jobs from queue
+atrm <job-id>
+
+```
