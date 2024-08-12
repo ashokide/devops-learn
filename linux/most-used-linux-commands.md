@@ -171,3 +171,22 @@ wget -O <filename> <url>
 
 curl -X POST -H "Content-Type: application/json" -d '{"key":"value"}' https://api.example.com/endpoint
 ```
+
+#### 20) `tar` -> create or extract compressed archive files
+```sh
+# -c create archive
+# -x extract archive
+# -v verbose
+# -f file
+# -t list
+# -d delete
+# -r append
+
+tar -cvf <compressed-file>
+tar -xvf <compressed-file>
+
+tar -tvf <compressed-file>
+
+tar -d -f <compressed-file> <file>
+tar -r -f <compressed-file> <file>
+```
