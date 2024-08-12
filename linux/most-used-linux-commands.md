@@ -411,3 +411,12 @@ ping -c <count> <destination-address>
 ```sh
 traceroute <destination-address>
 ```
+
+#### 35) `curl` -> check website connectivity
+```sh
+# -I to retrieve headers only
+# -s silent
+# head -n 1 -> first one line only
+
+curl -Is <destination-address> | head -n 1
+```
