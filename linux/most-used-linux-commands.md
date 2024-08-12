@@ -366,3 +366,22 @@ systemctl list-units
 
 journalctl -u sshd -p info
 ```
+
+#### 31) `cron` -> schedule tasks
+```sh
+# edit crontab
+crontab -e
+
+# list crontab
+crontab -l
+
+# remove crontab
+crontab -r
+
+# cron status
+systemctl status crond
+
+# view logs
+cat /var/log/syslog
+cat /var/log/cron
+```
