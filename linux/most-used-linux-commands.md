@@ -264,3 +264,13 @@ df / -h
 
 du -sh <file/directory>
 ```
+
+#### 25) `ifconfig` -> displays information about all network interfaces
+```sh
+ifconfig -a # list of all interfaces and their informations
+
+ifconfig <interface-name> up
+ifconfig <interface-name> down
+
+ifconfig <interface-name> <ip-address> netmask <subnet>
+```
