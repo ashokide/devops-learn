@@ -123,3 +123,11 @@ chown -R <user>:<group> <file-name>
 ps aux
 ps -ef
 ```
+
+#### 15) `top` -> system process in realtime
+```sh
+# -b batch mode (non-interactive)
+# -n no. of iterations 
+
+top -b -n 1
+```
