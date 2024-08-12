@@ -192,3 +192,44 @@ tar -d -f <compressed-file> <file>
 tar -u -f <compressed-file> <file>
 tar -r -f <compressed-file> <file>
 ```
+
+#### 21) `ssh` -> secure shell: connect to remote machines
+To Connect: 
+```sh
+# -i identity file (private key)
+# -p port (by default - 22)
+ssh -i <private-key-file> <username>@<host-address> -p <port>
+```
+
+To Generate Key: 
+```sh
+# -t key type
+
+ssh-keygen -t <key-type>
+```
+
+To Copy Public Key: 
+```sh
+# -i identity file (public key)
+
+ssh-copy-id -i <public-key-file> <username>@<host-address>
+```
+
+To add private key to SSH Agent:
+```
+# -l list private keys
+# -d delete private key
+
+ssh-add <key-file>
+ssh-add -l
+ssh-add -d <file>
+```
+
+Config File:
+```
+Host <name-to-machine>
+  HostName <host-address>
+  Port <port>
+  User <username>
+  IdentityFile <path-to-private-key>
+```
