@@ -131,3 +131,12 @@ ps -ef
 
 top -b -n 1
 ```
+
+#### 15) `kill` -> kill process
+```sh
+# signals
+# -15 (default) - kill the process gracefully
+# -9 - kill the process immediately
+
+kill -9 <process-id>
+```
