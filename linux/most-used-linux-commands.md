@@ -256,3 +256,11 @@ rsync -azv <file/directory-to-sync> <username>@<host-address>:<path-to-store-fil
 df -h
 df / -h
 ```
+
+#### 25) `du` -> disk usage
+```sh
+# -h human readable format
+# -s total size for each argument
+
+du -sh <file/directory>
+```
