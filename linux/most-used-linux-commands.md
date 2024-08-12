@@ -233,3 +233,10 @@ Host <name-to-machine>
   User <username>
   IdentityFile <path-to-private-key>
 ```
+
+#### 22) `scp` -> copy files securely
+```sh
+# -i identity file
+# -r copy directory files recursively
+scp -i <private-key> <username>@<host-address>:<path-to-store-file>
+```
