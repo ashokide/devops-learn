@@ -317,12 +317,23 @@ ip route
 ```
 
 #### 28) `netstat` -> network statistics 
-``` 
+``` sh
 # t - tcp connections
 # u - udp connections
 # l - listening sockets
 # p - display pid/process name
 # n - display numeric address and port number
+# a - all sockets, including listening, established, and closed sockets
 
 sudo netstat -tulpn
 ```
+
+##### socket statistics `ss` 
+more efficient and scalable than `netstat` and is part of `iproute2` package
+
+``` sh
+sudo ss -tulpn
+```
+
+
+
