@@ -359,3 +359,10 @@ systemctl status <service-name>
 systemctl list-units
 ```
 
+#### 30) `journalctl` -> view system service logs using systemd journal
+```sh
+# -u unit (sshd, apache2, etc., )
+# -p priority (warning, error, info)
+
+journalctl -u sshd -p info
+```
