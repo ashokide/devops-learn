@@ -117,8 +117,8 @@ chown -R <user>:<group> <file-name>
 # a - all process
 # u - show the user name
 # x - daemon process
-# -e - all process
-# -f - includes command line
+# -e - all process including other users
+# -f - full formatted including command line
 
 ps aux
 ps -ef
