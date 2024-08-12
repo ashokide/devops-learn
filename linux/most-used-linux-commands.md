@@ -111,3 +111,15 @@ chmod <permissions> <file-name>
 
 chown -R <user>:<group> <file-name>
 ```
+
+#### 14) `ps` -> process status
+```sh
+# a - all process
+# u - show the user name
+# x - daemon process
+# -e - all process
+# -f - includes command line
+
+ps aux
+ps -ef
+```
