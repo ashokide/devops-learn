@@ -133,10 +133,25 @@ top -b -n 1
 ```
 
 #### 15) `kill` -> kill process
+Kill by process id
 ```sh
 # signals
 # -15 (default) - kill the process gracefully
 # -9 - kill the process immediately
 
 kill -9 <process-id>
+```
+
+Kill by process name
+```sh
+# signals
+# -15 (default) - kill the process gracefully
+# -9 - kill the process immediately
+
+pkill -9 <process-name>
+```
+
+Grep process id
+```sh
+pgrep <process-name>
 ```
