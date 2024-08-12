@@ -105,14 +105,14 @@ find <path-to-search> -name <file-name/directory-name>
 chmod <permissions> <file-name>
 ```
 
-#### 13) `chown` -> change file ownership
+#### 14) `chown` -> change file ownership
 ```sh
 # -R change ownership for all files and directories recursively
 
 chown -R <user>:<group> <file-name>
 ```
 
-#### 14) `ps` -> process status
+#### 15) `ps` -> process status
 ```sh
 # a - all process
 # u - show the user name
@@ -124,7 +124,7 @@ ps aux
 ps -ef
 ```
 
-#### 15) `top` -> system process in realtime
+#### 16) `top` -> system process in realtime
 ```sh
 # -b batch mode (non-interactive)
 # -n no. of iterations 
@@ -132,7 +132,7 @@ ps -ef
 top -b -n 1
 ```
 
-#### 15) `kill` -> kill process
+#### 17) `kill` -> kill process
 Kill by process id
 ```sh
 # signals
@@ -156,13 +156,13 @@ Grep process id
 pgrep <process-name>
 ```
 
-#### 16) `wget` -> download files
+#### 18) `wget` -> download files
 ```sh
 # -O output filename
 wget -O <filename> <url>
 ```
 
-#### 17) `curl` -> transferring data to and from a web server
+#### 19) `curl` -> transferring data to and from a web server
 ```sh
 # -X http request type
 # -H custom header
