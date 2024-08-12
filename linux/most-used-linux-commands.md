@@ -155,3 +155,9 @@ Grep process id
 ```sh
 pgrep <process-name>
 ```
+
+#### 16) `wget` -> download files
+```sh
+# -O output filename
+wget -O <filename> <url>
+```
