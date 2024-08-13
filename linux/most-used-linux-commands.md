@@ -500,3 +500,30 @@ sudo -i
 # run commands with privileges
 sudo <command>
 ```
+
+#### 43) `lsof` -> list open files - information about open files and network connections
+```sh
+# -i to show only ipv4 and ipv6 connections
+lsof -i
+
+# -i4 to show only ipv4 connections
+lsof -i4
+
+# -i6 to show only ipv6 connections
+lsof -i6
+
+# list of connections using the given port
+lsof -i :<port-number>
+
+# list of connections using ip protocol (TCP/UDP) with the given port
+lsof -i TCP:<port-number>
+
+# list of connections using ip protocol (TCP/UDP) with the given ip address
+lsof -i TCP@<ip-address>
+
+# -u to show files and connections created by user
+lsof -u <username>
+
+# -p to show the files and connections with given process id 
+lsof -p <process-id>
+```
