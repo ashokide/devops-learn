@@ -574,3 +574,18 @@ sed '3d' file.txt
 # delete all lines starts with #
 sed '/^#/d' file.txt
 ```
+
+#### `awk` -> text processing
+```sh
+# -F - field separator
+# NR - row number
+# NF - no. of fields
+# $1 - print the first column
+
+awk -F "," '{ if(NR>1) print $1 }' file.txt
+
+# calculate the sum of a column
+# END - executed after all the input lines
+
+awk '{sum+=$1} END {print sum}' file.txt
+```
