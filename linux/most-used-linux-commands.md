@@ -430,3 +430,18 @@ curl -Is <destination-address> | head -n 1
 
 dig <domain-name> <dns-record-type>
 ```
+
+#### 37) `hostname` -> get/set the hostname - hostname is the name given to the computer
+```sh
+# get the hostname
+hostname
+
+# display the ip address associated with the hostname 
+hostname -i
+
+# set the hostname temporarily
+sudo hostname <new-hostname>
+
+# set the hostname permanently
+sudo hostnamectl set-hostname <new-hostname>
+```
