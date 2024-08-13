@@ -556,3 +556,21 @@ nc -zv <ip-address> <port-range>
 
 nc -zv example.com 80-84 
 ```
+
+#### 45) `sed` -> stream editor
+```sh
+# replace a string in place
+# s  - substitute
+# g  - global
+# -i - modify a file in-place (create a backup file with given extension)
+
+sed -i '.bak' 's/old/new/g' file.txt
+
+# delete specific line
+# 3 specifies the line number
+
+sed '3d' file.txt
+
+# delete all lines starts with #
+sed '/^#/d' file.txt
+```
