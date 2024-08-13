@@ -575,7 +575,7 @@ sed '3d' file.txt
 sed '/^#/d' file.txt
 ```
 
-#### `awk` -> text processing
+#### 46) `awk` -> text processing
 ```sh
 # -F - field separator
 # NR - row number
