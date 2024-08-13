@@ -487,3 +487,16 @@ usermod -aG <groupname> <username>
 
 passwd <username>
 ```
+
+#### 42) `sudo` -> superuser do - allows users to run commands with root privileges
+```sh
+# -u to run command as a specific user
+
+sudo -u <username> <command>
+
+# temporarily switch to root user
+sudo -i
+
+# run commands with privileges
+sudo <command>
+```
