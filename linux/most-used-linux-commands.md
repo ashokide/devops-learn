@@ -527,3 +527,32 @@ lsof -u <username>
 # -p to show the files and connections with given process id 
 lsof -p <process-id>
 ```
+
+#### 44) `nc` -> netcat - manage networks and monitor the flow
+* simple chat
+```sh
+# -l listen on port
+nc -l 3000
+
+# connect to port
+nc localhost 3000
+```
+
+* web server
+```sh
+# HTTP/1.1 - HTTP version
+# 200 OK   - HTTP status code with message
+# \r\n     - separate headers from the response body
+
+while true; do { echo -ne "HTTP/1.1 200 OK\r\nContent-Length: $(wc -c < index.html)\r\nContent-Type: text/html\r\n\r\n"; cat index.html; } | nc -l 8000; done
+```
+
+* scan ports
+```sh
+# -z - scan listening daemons
+# -v - verbose
+
+nc -zv <ip-address> <port-range>
+
+nc -zv example.com 80-84 
+```
