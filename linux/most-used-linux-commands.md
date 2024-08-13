@@ -420,3 +420,13 @@ traceroute <destination-address>
 
 curl -Is <destination-address> | head -n 1
 ```
+
+#### 36) `dig` -> get dns information for the domain name
+```sh
+# dns record types - A, AAAA, CNAME, NS, MX
+# ALL - provide all data
+# -x     - reverse dns
+# +short - short form result
+
+dig <domain-name> <dns-record-type>
+```
