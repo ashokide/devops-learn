@@ -445,3 +445,10 @@ sudo hostname <new-hostname>
 # set the hostname permanently
 sudo hostnamectl set-hostname <new-hostname>
 ```
+
+#### 38) `who` -> displays information about the users currently logged
+```sh
+# shows username, terminal, login time
+who
+```
+
