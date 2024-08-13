@@ -446,7 +446,13 @@ sudo hostname <new-hostname>
 sudo hostnamectl set-hostname <new-hostname>
 ```
 
-#### 38) `useradd` -> to create a new user
+#### 38) `who` -> displays information about the users currently logged
+```sh
+# shows username, terminal, login time
+who
+```
+
+#### 39) `useradd` -> to create a new user account
 ```sh
 # -m create home directory
 # -d specify home directory
@@ -458,7 +464,21 @@ useradd -m <username>
 ```
 > To delete user along with thier home directory `userdel -r <username>`
 
-#### 39) `passwd` -> to set new password for the user
+
+#### 40) `usermod` -> to modify a user account
+```sh
+# -d modify home directory
+# -a append
+# -G groups
+# -s specify shell
+# -l change the login name
+# -L lock the user account
+# -p set password
+
+usermod -aG <groupname> <username>
+```
+
+#### 41) `passwd` -> to set new password for the user
 ```sh
 # -e force to change the password at next login
 # -l lock user account
