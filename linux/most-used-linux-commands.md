@@ -457,3 +457,13 @@ sudo hostnamectl set-hostname <new-hostname>
 useradd -m <username>
 ```
 > To delete user along with thier home directory `userdel -r <username>`
+
+#### 39) `passwd` -> to set new password for the user
+```sh
+# -e force to change the password at next login
+# -l lock user account
+# -u unlock user account
+# -d delete password
+
+passwd <username>
+```
