@@ -589,3 +589,13 @@ awk -F "," '{ if(NR>1) print $1 }' file.txt
 
 awk '{sum+=$1} END {print sum}' file.txt
 ```
+
+#### 47) `cut` -> extract the specific section of text from file
+```sh
+# -d delimiter, by default tab space
+# -f fields
+# -c characters
+# -s suppress lines with no delimiter
+
+cut -d "," -f 1 -s file.txt
+```
