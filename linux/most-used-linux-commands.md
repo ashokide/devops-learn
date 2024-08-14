@@ -609,3 +609,11 @@ cut -d "," -f 1 -s file.txt
 
 sort -t "," -k 2 file.txt
 ```
+
+#### 49) `diff` -> compare the contents of two files/directories
+```sh
+# -y human readable format
+# -r compare the contents of two directories
+
+diff -y file1.txt file2.txt
+```
