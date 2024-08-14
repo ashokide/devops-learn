@@ -599,3 +599,13 @@ awk '{sum+=$1} END {print sum}' file.txt
 
 cut -d "," -f 1 -s file.txt
 ```
+
+#### 48) `sort` -> sort lines of text
+```sh
+# -t delimiter, by default white space
+# -n numerical sort
+# -r reverse sort
+# -k sort by specific column
+
+sort -t "," -k 2 file.txt
+```
