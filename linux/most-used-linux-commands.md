@@ -617,3 +617,10 @@ sort -t "," -k 2 file.txt
 
 diff -y file1.txt file2.txt
 ```
+
+#### 50) `xargs` -> build and execute command lines from standard input
+```sh
+# -I {} replacement string
+
+ls *.txt | xargs -I {} mv {} {}.bak
+```
