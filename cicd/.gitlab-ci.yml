@@ -1,7 +1,6 @@
 variables:
     MARKDOWN: "markdown"
     LIBXML2: "libxml2-utils"
-    S3_BUCKET: "my-markdown-website"
 
 image: alpine:latest
 
@@ -28,10 +27,42 @@ test_website:
     dependencies:
         - build_website
 
-deploy_website:
+deploy_qa:
+    variables:
+        S3_BUCKET: "my-markdown-website-qa"
     stage: deploy
     script:
         - apk add aws-cli
         - aws s3 cp ./public/ s3://$S3_BUCKET/ --recursive
+    environment: qa
     dependencies:
         - build_website
+    rules:
+        - if: $CI_COMMIT_BRANCH == "main"
+
+deploy_staging:
+    variables:
+        S3_BUCKET: "my-markdown-website-stage"
+    stage: deploy
+    script:
+        - apk add aws-cli
+        - aws s3 cp ./public/ s3://$S3_BUCKET/ --recursive
+    environment: stage
+    dependencies:
+        - build_website
+    rules:
+        - if: $CI_COMMIT_TAG
+
+deploy_prod:
+    variables:
+        S3_BUCKET: "my-markdown-website-prod"
+    stage: deploy
+    script:
+        - apk add aws-cli
+        - aws s3 cp ./public/ s3://$S3_BUCKET/ --recursive
+    environment: prod
+    dependencies:
+        - build_website
+    rules:
+        - if: $CI_COMMIT_TAG
+          when: manual
