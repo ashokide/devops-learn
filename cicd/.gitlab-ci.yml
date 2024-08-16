@@ -1,0 +1,37 @@
+variables:
+    MARKDOWN: "markdown"
+    LIBXML2: "libxml2-utils"
+    S3_BUCKET: "my-markdown-website"
+
+image: alpine:latest
+
+stages:
+    - build
+    - test
+    - deploy
+
+build_website:
+    stage: build
+    script:
+        - apk add $MARKDOWN
+        - mkdir -p public/
+        - markdown README.md > ./public/index.html
+    artifacts:
+        paths:
+            - "public/index.html"
+
+test_website:
+    stage: test
+    script:
+        - apk add $LIBXML2
+        - xmllint --html ./public/index.html
+    dependencies:
+        - build_website
+
+deploy_website:
+    stage: deploy
+    script:
+        - apk add aws-cli
+        - aws s3 cp ./public/ s3://$S3_BUCKET/ --recursive
+    dependencies:
+        - build_website
