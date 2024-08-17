@@ -59,3 +59,39 @@ build-job:
   artifacts:
     paths: file-to-be-copied.txt
 ```
+
+#### Dependencies
+Specify the relationships between jobs in a pipeline
+
+```yml
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+  dependencies:
+    - build-job
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying the project..."
+  dependencies:
+    - test-job
+```
+
+#### Rules
+Define when a job should be executed or skipped
+
+```yml
+build-job:
+  stage: build
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: on_success
+
+deploy-job:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: manual
+```
