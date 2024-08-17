@@ -2,6 +2,9 @@
 
 `.gitlab-ci.yml` is a YAML file that defines the CI/CD pipeline for a GitLab project
 
+Navigate 
+- Build > Pipeline editor
+
 #### Variables
 Environment variables that can be used throughout the pipeline
 
@@ -94,4 +97,22 @@ deploy-job:
   rules:
     - if: $CI_COMMIT_TAG
       when: manual
+```
+
+#### Pipeline Variables
+Variables store information that you can use in job scripts
+
+Navigate
+- Settings > CICD > Variables
+
+#### Pipeline Environments
+Define and manage environments for your pipeline
+
+Navigate
+- Operate > Environments
+
+```yml
+deploy-job:
+    stage: deploy
+    environment: <environment-name>
 ```
