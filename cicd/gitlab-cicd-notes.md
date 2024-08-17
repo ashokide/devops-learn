@@ -27,3 +27,35 @@ stages:
   - test
   - deploy
 ```
+
+#### Jobs
+Defines individual jobs that run in each stage
+
+```yml
+job-name:
+  stage: test
+```
+
+#### Script
+Specifies the commands to run in each job
+
+```yml
+job-name:
+  stage: test
+  script:
+    - echo "Hello World"
+    - echo "Hello World"
+    - echo "Hello World"
+```
+
+#### Artifacts
+Files or directories that are generated during the execution of a job
+
+```yml
+build-job:
+  stage: build
+  script:
+    - echo "Building the project..."
+  artifacts:
+    paths: file-to-be-copied.txt
+```
