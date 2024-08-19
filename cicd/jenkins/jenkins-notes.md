@@ -16,8 +16,9 @@ pipeline {
 ```
 
 #### Agent
-Defines where the pipeline or stage should run
-
+- Defines where the pipeline or stage should run
+- `agent any` means the pipeline can run on any available agent
+  
 ```groovy
 pipeline {
     agent any
