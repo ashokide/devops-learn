@@ -23,3 +23,27 @@ pipeline {
     agent any
 }
 ```
+
+#### Stages and Steps
+- Group the pipeline into different phases such as build, test, and deploy. Each stage can contain multiple steps
+- Individual tasks within a stage. Steps can include commands like shell scripts
+  
+```groovy
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+    }
+}
+
+```
