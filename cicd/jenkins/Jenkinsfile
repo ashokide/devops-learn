@@ -1,9 +1,14 @@
 pipeline {
     agent any
-
+    
+    environment {
+        MY_ENV_VAR = 'some_value'
+    }
+    
     stages {
         stage('Build') {
             steps {
+                sh 'echo The value of MY_ENV_VAR is $MY_ENV_VAR'
                 echo 'build'
             }
         }
