@@ -45,5 +45,23 @@ pipeline {
         }
     }
 }
+```
 
+#### Environment Variables
+Allows to define environment variables that can be used throughout the pipeline
+
+```groovy
+pipeline {
+    agent any
+    environment {
+        MY_ENV_VAR = 'some_value'
+    }
+    stages {
+        stage('Example') {
+            steps {
+                sh 'echo The value of MY_ENV_VAR is $MY_ENV_VAR'
+            }
+        }
+    }
+}
 ```
