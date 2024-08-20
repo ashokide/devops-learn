@@ -1,4 +1,4 @@
-<img width="660" alt="image" src="https://github.com/user-attachments/assets/a9caa806-6b14-40a4-9371-c470c2e0c3fa">## Amazon Web Services (AWS)
+## Amazon Web Services (AWS)
 Link : https://aws.amazon.com/
 # Services
 
