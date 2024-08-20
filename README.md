@@ -1,7 +1,11 @@
 # DevOps
 
-* Linux
-* AWS
-* Docker
-* CI/CD - GitLab CI/CD, Jenkins
-* Terraform
+- Linux
+- AWS
+  - IAM
+  - EC2
+- Docker
+- CI/CD
+  - GitLab CI/CD
+  - Jenkins
+- Terraform
