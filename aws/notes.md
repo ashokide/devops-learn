@@ -13,3 +13,6 @@ On-demand computing service on the AWS cloud platform
 
 - Tenancy Model<br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1d691ce6-ee47-47e2-b17b-24d2614fce0d">
+
+### Simple Storage Service (S3)
+Cloud based object storage service
