@@ -16,3 +16,19 @@ On-demand computing service on the AWS cloud platform
 
 ### Simple Storage Service (S3)
 Cloud based object storage service
+
+Bucket policy for public access
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::your-bucket-name/*"
+        }
+    ]
+}
+```
