@@ -3,7 +3,10 @@ Link : https://aws.amazon.com/
 # Services
 
 ### Identity and Access Management (IAM) -- Global Service
-Manage Users, Groups, Roles, Policies
+- Users - user is an individual
+- Groups - group is a collection of users
+- Roles - role is a predefined set of permissions and access levels
+- Policies - policy is a set of rules
 
 ### Elastic Compute Cloud (EC2) 
 On-demand computing service on the AWS cloud platform
