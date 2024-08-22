@@ -35,3 +35,19 @@ Bucket policy for public access
     ]
 }
 ```
+
+### VPC
+
+### Subnet
+
+### Internet Gateway
+
+### Nat Gateway
+
+### Load Balancer
+
+### Security Groups
+
+### Network Access Control List (NACL)
+
+
