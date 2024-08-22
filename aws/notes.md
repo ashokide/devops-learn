@@ -42,7 +42,8 @@ Virtual network - Logically isolated section
 ### Subnet
 Sub-network within a Virtual Private Cloud (VPC) that represents a range of IP addresses
 
-### Internet Gateway
+### Internet Gateway (IGW)
+Allows communication between instances in a VPC and the Internet
 
 ### Nat Gateway
 
