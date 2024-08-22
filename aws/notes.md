@@ -36,9 +36,11 @@ Bucket policy for public access
 }
 ```
 
-### VPC
+### Virtual Private Cloud (VPC)
+Virtual network - Logically isolated section
 
 ### Subnet
+Sub-network within a Virtual Private Cloud (VPC) that represents a range of IP addresses
 
 ### Internet Gateway
 
