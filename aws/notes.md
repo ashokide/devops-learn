@@ -45,6 +45,9 @@ Sub-network within a Virtual Private Cloud (VPC) that represents a range of IP a
 ### Internet Gateway (IGW)
 Allows communication between instances in a VPC and the Internet
 
+### Route Table
+Set of rules that determines where network traffic is directed in a Virtual Private Cloud (VPC)
+
 ### Nat Gateway
 
 ### Load Balancer
