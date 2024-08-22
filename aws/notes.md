@@ -51,10 +51,9 @@ Set of rules that determines where network traffic is directed in a Virtual Priv
 ### Nat Gateway
 Enables instances in a private subnet to access the Internet, while preventing the Internet from initiating connections to those instances
 
-### Load Balancer
-
 ### Security Groups
+Virtual firewall to control incoming and outgoing traffic to and from instances
 
 ### Network Access Control List (NACL)
-
+Security feature in AWS that act as a firewall at the subnet level
 
