@@ -49,6 +49,7 @@ Allows communication between instances in a VPC and the Internet
 Set of rules that determines where network traffic is directed in a Virtual Private Cloud (VPC)
 
 ### Nat Gateway
+Enables instances in a private subnet to access the Internet, while preventing the Internet from initiating connections to those instances
 
 ### Load Balancer
 
