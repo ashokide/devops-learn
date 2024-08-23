@@ -35,3 +35,20 @@ MFA Device Options
 - Virtual MFA Device
 - Security Key
 - Hardware Key
+
+### AWS can be accessed through
+- AWS Management Console (protected by password + MFA)
+- AWS Command Line Interface (CLI) (protected by access keys)
+  - Interact with AWS resources using commands from command line
+- AWS Software Development Kit (SDK) (protected by access keys)
+  - Access and manage services programmatically using JavaScript, Python, etc.,
+  
+## Access Keys
+- generted through aws console
+- ACCESS KEY ID (username)
+- SECRECT ACCESS KEY (password)
+
+## CLI Configure
+- Install AWS CLI
+- Type `aws configure` in Command Line
+- Enter Access Key and Secret Access Key
