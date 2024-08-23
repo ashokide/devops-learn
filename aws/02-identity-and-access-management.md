@@ -44,7 +44,7 @@ MFA Device Options
   - Access and manage services programmatically using JavaScript, Python, etc.,
   
 ## Access Keys
-- generted through aws console
+- Generted through AWS Console
 - ACCESS KEY ID (username)
 - SECRECT ACCESS KEY (password)
 
@@ -52,3 +52,20 @@ MFA Device Options
 - Install AWS CLI
 - Type `aws configure` in Command Line
 - Enter Access Key and Secret Access Key
+
+## Cloud Shell
+A browser-based shell, allows to run scripts with the AWS Command Line Interface (CLI) without configuration
+
+## IAM : Roles
+- Some AWS service will need to perform actions on your behalf
+- Assign permissions to AWS services with IAM roles
+- Common Roles
+  - EC2 Instance Roles
+  - Lambda Function Roles
+  - CloudFormation Roles   
+
+## IAM Security Tools
+- IAM Credentials Report (account level)
+  - A report that lists account's all users and their status
+- IAM Access Advisor (user level)
+  - Shows service permissions granted to a user and last accessed time
