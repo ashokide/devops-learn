@@ -27,3 +27,11 @@
 - Principal - Account/User/Role
 - Action - List of actions
 - Resource - List of resource to which action should be applied
+
+## IAM : Multi Factor Authentication (MFA)
+Password + Security Device <br/>
+
+MFA Device Options
+- Virtual MFA Device
+- Security Key
+- Hardware Key
