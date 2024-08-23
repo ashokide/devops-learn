@@ -1,12 +1,26 @@
 ## Amazon Web Services (AWS)
 Link : https://aws.amazon.com/
+
+## Cloud Computing
+- On-demand delivery of compute power, database storage, applications and other IT resources
+- Pay as you go pricing
+
+## Types of cloud
+- Private Cloud : Rackspace
+- Public Cloud : AWS, GCP, Azure
+- Hybrid Cloud : On-premises and public cloud
+
+#### Shared Responsibility Model (Security) 
+- Customer   - Responsible for security in the cloud
+- AWS        - Responsible for security of the cloud
+
 # Services
 
 ### Identity and Access Management (IAM) -- Global Service
-- Users - user is an individual
-- Groups - group is a collection of users
-- Roles - role is a predefined set of permissions and access levels
-- Policies - policy is a set of rules
+- Users     - user is an individual
+- Groups    - group is a collection of users
+- Roles     - role is a predefined set of permissions and access levels
+- Policies  - policy is a set of rules
 
 ### Elastic Compute Cloud (EC2) 
 On-demand computing service on the AWS cloud platform
