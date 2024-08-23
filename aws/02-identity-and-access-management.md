@@ -69,3 +69,13 @@ A browser-based shell, allows to run scripts with the AWS Command Line Interface
   - A report that lists account's all users and their status
 - IAM Access Advisor (user level)
   - Shows service permissions granted to a user and last accessed time
+
+## Shared Responsibility Model for IAM
+- AWS
+  - Infrastructure
+  - Configuration
+  - Compliance Validation
+- Customer
+  - Users, Groups, Policies, Roles
+  - MFA
+  - Analyze access patterns and review permissions
