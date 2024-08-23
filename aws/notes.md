@@ -24,23 +24,23 @@ Link : https://aws.amazon.com/
 - Regions - cluster of data centers
 - Availability Zones - discrete data centers (Min 3 Zones)
 
-#### Points of Presence
+## Points of Presence
 - Edge Locations
 - Regional Caches
 
-#### Global Services
+## Global Services
 - IAM, Route 53, CloudFront (CDN), WAF (Web Application Firewall), etc.,
 
-#### Region Scoped
+## Region Scoped
 - EC2, Lambda, Elastic Beanstalk, etc.,
 
 ## Shared Responsibility Model (Security) 
 - Customer   - Responsible for security in the cloud
 - AWS        - Responsible for security of the cloud
 
-# Services
+## Services
 
-### Identity and Access Management (IAM) -- Global Service
+## Identity and Access Management (IAM) -- Global Service
 - Users     - user is an individual
 - Groups    - group is a collection of users
 - Roles     - role is a predefined set of permissions and access levels
