@@ -10,7 +10,31 @@ Link : https://aws.amazon.com/
 - Public Cloud : AWS, GCP, Azure
 - Hybrid Cloud : On-premises and public cloud
 
-#### Shared Responsibility Model (Security) 
+## Types of cloud computing
+- Infrastructure as a Service (IaaS) : AWS, Linode
+- Platform as a Service (PaaS) : Heroku, Google App Engine, Elastic Beanstalk
+- Software as a Service (SaaS) : Google Docs, Dropbox, Zoom
+
+## Pricing of the cloud
+- Compute - Pay for compute time
+- Storage - Pay for data stored in the cloud
+- Data transfer OUT of the cloud
+
+## AWS Global Infrastructure
+- Regions - cluster of data centers
+- Availability Zones - discrete data centers (Min 3 Zones)
+
+#### Points of Presence
+- Edge Locations
+- Regional Caches
+
+#### Global Services
+- IAM, Route 53, CloudFront (CDN), WAF (Web Application Firewall), etc.,
+
+#### Region Scoped
+- EC2, Lambda, Elastic Beanstalk, etc.,
+
+## Shared Responsibility Model (Security) 
 - Customer   - Responsible for security in the cloud
 - AWS        - Responsible for security of the cloud
 
