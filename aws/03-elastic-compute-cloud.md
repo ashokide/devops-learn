@@ -59,3 +59,5 @@
 - Customer
   - Security Groups
   - Roles
+  - Operating System updates and patches
+  - Softwares installed
