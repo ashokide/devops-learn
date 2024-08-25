@@ -21,4 +21,19 @@
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/b7b74ff6-f770-44d1-aa50-eb9bceb15996">
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/2e8a3ed3-4686-49c2-86f2-04dd27cd49a2">
 
+## Security Groups
+- Virtual firewall for EC2 instances to control incoming and outgoing traffic
+- Contains only allow rules
 
+## Ports to remember
+- 22 - SSH
+- 21 - FTP
+- 22 - SFTP
+- 80 - HTTP
+- 443 - HTTPS
+- 3389 - RDP
+
+## Access EC2 Instance
+- SSH (Linux, Mac, Windows>=10)
+- Putty (Windows < 10)
+- EC2 Instance Connect (Web Based)
