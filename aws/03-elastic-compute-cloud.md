@@ -51,3 +51,11 @@
 - Dedicated Instances – Pay, by the hour, for instances that run on single-tenant hardware
 - Capacity Reservations – Reserve capacity for your EC2 instances in a specific Availability Zone
 
+## Shared Responsibility Model
+- AWS
+  - Infrastructure
+  - Isolation on physical hosts
+  - Replacing faulty hardware
+- Customer
+  - Security Groups
+  - Roles
