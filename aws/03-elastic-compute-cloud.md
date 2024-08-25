@@ -37,3 +37,7 @@
 - SSH (Linux, Mac, Windows>=10)
 - Putty (Windows < 10)
 - EC2 Instance Connect (Web Based)
+
+## EC2 Instance Roles
+- Instead of using `aws configure` and putting down the access keys in the EC2 instance, Use the **IAM roles**
+- Create a role with necessary policies and attach it to the EC2 instance
