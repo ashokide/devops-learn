@@ -9,3 +9,11 @@ Secure Shell (Port : 22)
 ```sh
 sudo apt install openssh-server
 ```
+
+## Stress Tool
+Stress the CPU
+
+```sh
+sudo apt install stress
+stress -c <cores> -t <timeout-seconds>
+```
