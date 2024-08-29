@@ -61,3 +61,30 @@ sudo mount /dev/sdX /mnt/myvolume
 ```sh
 df -h
 ```
+
+### 7. Automatically mount an attached volume after reboot
+defaults - enables the default mount options <br>
+0 - prevent the file system from being dumped <br>
+2 - indicate that it is a non-root device <br>
+
+```sh
+# using volume name
+sudo echo "/dev/sdX /mnt/myvolume ext4 defaults,nofail 0 2" >> /etc/fstab
+
+# using volume block id
+sudo echo "UUID=<block-id> /mnt/myvolume ext4 defaults,nofail 0 2" >> /etc/fstab
+```
+> [!NOTE]
+> to get block id : sudo blkid
+
+### 8. Unmount the volume
+```sh
+# umount <mount point>
+sudo umount /mnt/myvolume
+```
+
+### 9. Mount the volumes from `fstab`
+Mount all file systems in `/etc/fstab`
+```sh
+sudo mount -a
+```
