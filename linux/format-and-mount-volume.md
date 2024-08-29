@@ -34,3 +34,27 @@ file -s /dev/sdX
 ```sh
 sudo mkfs -t ext4 /dev/sdX
 ```
+
+### 4. Create a mount point
+Create a mount point (a directory) to access the formatted volume
+
+```sh
+sudo mkdir /mnt/myvolume
+```
+
+### 5. Mount the volume
+`mount` command to mount the formatted volume to the created mount point
+
+```sh
+# /dev/sdX - volume
+# /mnt/myvolume - mount point
+
+sudo mount /dev/sdX /mnt/myvolume
+```
+
+### 6. Verify the mount
+`df` command to verify that the volume is mounted
+
+```sh
+df -h
+```
