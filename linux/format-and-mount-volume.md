@@ -32,14 +32,17 @@ file -s /dev/sdX
 `mkfs` command to format the volume and `-t` option to provide a file system
 
 ```sh
-sudo mkfs -t ext4 /dev/sdX
+# example : mkfs -t ext4 /dev/sdb
+
+sudo mkfs -t <file-system-type> /dev/sdX
 ```
 
 ### 4. Create a mount point
 Create a mount point (a directory) to access the formatted volume
 
 ```sh
-sudo mkdir /mnt/myvolume
+# example : mkdir /mnt/myvolume
+sudo mkdir <mount-point-location>
 ```
 
 ### 5. Mount the volume
