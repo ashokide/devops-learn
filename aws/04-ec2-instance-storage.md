@@ -56,3 +56,15 @@
 - Storage class that is cost optimized for files that not accessed every day
 - Upto 92% lower cost compared to EFS Standard
 - EFS will move files to EFS-IA based on last time they were accessed
+
+## Shared Responsibility Model
+- AWS
+  - Infrastructure
+  - Replication of data for EBS and EFS
+  - Replacing faulty hardware
+  - Ensuring their employees cannot access their data
+- Customer
+  - Backup/Snapshot
+  - Data encryption
+  - Responsible for any data on drives
+  - Understand the risk of EC2 instance store
