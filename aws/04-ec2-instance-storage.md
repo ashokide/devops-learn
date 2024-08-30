@@ -40,3 +40,8 @@
   - Test EC2 Instance
 
 ## EC2 Instance Store
+- High performance hardware disk
+- Better I/O performance
+- Good for buffer/cache
+- Lose the storage, if stopped
+- Risk of data loss, if hardware fails
