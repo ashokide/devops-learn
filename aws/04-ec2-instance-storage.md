@@ -32,4 +32,11 @@
   - Create Instance from build AMI
 
 ## EC2 Image Builder
+- Automate the creation, maintain, validate and test AMI's
+- AMI Process
+  - EC2 Image Builder 
+  - Builder EC2 Instance (Customization)
+  - New AMI
+  - Test EC2 Instance
+
 ## EC2 Instance Store
