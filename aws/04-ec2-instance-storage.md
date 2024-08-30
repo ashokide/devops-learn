@@ -45,3 +45,14 @@
 - Good for buffer/cache
 - Lose the storage, if stopped
 - Risk of data loss, if hardware fails
+
+## Elastic File System (EFS)
+- Managed Network File System (NFS)
+- Can be mounted to 100s of EC2
+- Works with Linux EC2 in multi Availability Zone
+- Expensive (3x gp2)
+
+## EFS Infrequent Access (EFS-IA)
+- Storage class that is cost optimized for files that not accessed every day
+- Upto 92% lower cost compared to EFS Standard
+- EFS will move files to EFS-IA based on last time they were accessed
