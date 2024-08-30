@@ -20,6 +20,16 @@
 - Customization of an EC2 Instance
 - Add your own software, configuration, operating system, etc.,
 - Built for specific region and can be copied across regions
+- EC2 can be launched from
+  - Public AMI (AWS provided)
+  - Own AMI
+  - AWS Marketplace AMI (AMI that is made by someone else)
+- AMI Process
+  - Start instance
+  - Customize it
+  - Stop instance
+  - Build AMI (and also creates EBS snapshots)
+  - Create Instance from build AMI
 
 ## EC2 Image Builder
 ## EC2 Instance Store
