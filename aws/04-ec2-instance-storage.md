@@ -5,6 +5,17 @@
 - To move volume to different AZ, use snapshots
   
 ## EBS Snapshots
+- Backup (snapshot) of a EBS volume at a point of time
+- No need to detach volume to take snapshots
+- Can copy snapshots across AZ or region
+- Features
+  - EBS Snapshot Archive
+    - Move snapshots to 'Archive tier' that is 72% cheaper
+    - Takes 24 to 72 hours for restoring the archive
+  - Recycle Bin for EBS Snapshots
+    - Setup retention rules to retain deleted snapshots
+    - Specify retention period
+
 ## Amazon Machine Image (AMI) 
 ## EC2 Image Builder
 ## EC2 Instance Store
