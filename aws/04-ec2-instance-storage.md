@@ -68,3 +68,20 @@
   - Data encryption
   - Responsible for any data on drives
   - Understand the risk of EC2 instance store
+
+## Amazon FSx
+- Launch 3rd party high performance file systems on AWS
+- FSx for Lustre
+  - Scalable file storage for High Performance Computing (HPC)
+  - Linux + Cluster = Lustre
+  - Machine learning, Video processing, etc.,
+  - Scales upto 100GB/s, millions of IOPS
+
+- FSx for Windows File Server
+  - Windows native shared file system
+  - Built on windows file server
+  - Supports SMB protocol and Windows NTFS
+  - Integrated with Microsoft Active Directory
+  - Can be accessed from AWS and on-premise infrastructure
+
+- FSx for NetApp ONTAP
