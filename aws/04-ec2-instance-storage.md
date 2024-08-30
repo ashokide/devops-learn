@@ -17,5 +17,9 @@
     - Specify retention period
 
 ## Amazon Machine Image (AMI) 
+- Customization of an EC2 Instance
+- Add your own software, configuration, operating system, etc.,
+- Built for specific region and can be copied across regions
+
 ## EC2 Image Builder
 ## EC2 Instance Store
