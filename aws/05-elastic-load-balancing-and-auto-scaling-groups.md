@@ -15,3 +15,10 @@
 - Running application in atleast 2 Availability Zones
 - Goal is to survive datacenter loss (disaster)
   
+## Load Balancing
+- Forward internet traffic to multiple servers
+- Spread load across multiple downstream instances
+- Expose single point of access (DNS)
+- Do regular health checks
+- Provide SSL termination (HTTPS)
+- High availability across zones
