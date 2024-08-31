@@ -46,3 +46,19 @@
   - Route traffic to firewall
   - Intrusion Detection
   - 3rd Party Security Virtual Appliances
+
+## Auto Scaling Group
+- Scale in/Scale out instances to match the load
+- Ensure minimum or maximum number of instances running
+- Automatically register new instances to a load balancer
+- Replace unhealthy instances
+
+## Auto Scaling Group Strategies
+- Manual Scaling (Update the size of Auto Scaling Group manually)
+- Dynamic Scaling (Respond to changing demand)
+  - Simple/Step Scaling (When CPU load > 70%, add 2 units or when CPU load < 30%, remove 1 unit)
+  - Target Tracking Scaling (Maintain the average ASG CPU to 40%)
+  - Scheduled Scaling (Predict a scaling based on known usage patterns)
+  - Predictive Scaling
+    - Automatically provisions the number of instances based on the prediction of future traffic
+    - Useful when load has predictable time based patterns
