@@ -115,3 +115,12 @@
 
 > [!NOTE]
 > Can move between classes manually or using S3 Lifecycle Configurations
+
+## S3 Encryption
+- Server Side Encryption (Default)
+- Client Side Encryption
+
+## S3 - IAM Access Analyzer
+- Ensure the access to S3 buckets
+- Example : Publicly accessible bucket, bucket shared with other AWS account.,
+- Evaluates S3 Bucket Policies, S3 ACLs
