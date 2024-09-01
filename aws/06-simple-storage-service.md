@@ -137,3 +137,52 @@
   - Logging and Monitoring
   - S3 Storage Classes
   - Data Encryption
+
+## AWS Snow Family
+- Offline devices to perform data migrations
+- Highly secure portable devices
+- Collect and process data at the edge
+- Migrate data into and out of AWS
+- Usage
+  - Request Snowball Devices
+  - Install Snowball client/AWS OpsHub
+  - Connect Snowball and copy files
+  - Ship back the device
+  - Data will be loaded into S3 bucket
+  - Snowball will be wiped completely
+    
+## Snowcone 
+- Storage
+  - 8TB HDD - 14 TB SSD
+- Migration
+  - Upto terabytes
+
+## Snowball Edge 
+- Storage
+  - 80TB - 210 TB
+- Migration
+  - Upto petabytes
+
+## Edge Computing
+- Process data while it is being created on edge location (truck on road, ship on sea, underground)
+- Locations have limited internet and no access to computing power
+- Setup Snowball Edge/Snowcone device
+- Snowcone (2 CPU, 2GB Memory, Wired/Wireless Access)
+- Snowball Edge Computing Optimized & Storage Optimized
+- Usecase: Preprocess data, Transcoding Media
+- Pricing
+  - Device Usage and Data Transfer Out
+  - Data Transfer In to S3 is free
+
+## Hybrid Cloud for Storage
+- Part of Infrastructure is on-premises
+- Part of Infrastructure is on the cloud
+- Due to compliance requirements
+
+## AWS Storage Gateway 
+- Bridge between on-premise data and cloud data in S3
+- Use Case: Disaster Recovery, Backup and Restore
+- Types
+  - File Gateway
+  - Volume Gateway
+  - Tape Gateway
