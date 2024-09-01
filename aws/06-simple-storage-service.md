@@ -80,3 +80,38 @@
 - Use Cases
   - SRR : Log aggregation, Live replication between production and test accounts
   - CRR : Low latency Access, Compliance
+
+## S3 - Storage Classes
+- S3 Standard - General Purpose
+  - Used for frequently accessed data
+  - Low latency and high throughput
+- S3 Storage Classes - Infrequent Access (IA)
+  - Used for less frequently accessed data, but requires rapid access
+  - Lower cost than S3 Standard
+  - Types
+    - S3 Standard - Infrequent Access (IA)
+      - Use cases: Disaster Recovery, Backups
+    - S3 One Zone - Infrequent Access (IA)
+      - Data is stored in single AZ
+      - Data lost when AZ is destroyed
+      - Use cases: Storing secondary backups copies of on-premise data
+- S3 Glacier Storage Classes
+  - Low cost object storage meant for archiving/backup
+  - Price for storage and object retrieval cost
+  - Types
+    - S3 Galcier Instant Retrieval
+      - Millisecond retrieval, great for data accessed once a quarter
+      - Minimum storage duration of 90 days
+    - S3 Galcier Flexible Retrieval
+      - Expedited(1 to 5 minutes), Standard (3 to 4 hours), Bulk (5 to 12 hours)
+      - Minimum storage duration of 90 days
+    - S3 Galcier Deep Archive
+      - Standard (12 hours), Bulk (48 hours)
+      - Minimum storage duration of 180 days
+- S3 Intelligent Tiering
+  - Small monthly monitoring and auto tiering free
+  - Move objects automatically between Access tiers based on usage
+  - No retrieval charges
+
+> [!NOTE]
+> Can move between classes manually or using S3 Lifecycle Configurations
