@@ -20,3 +20,39 @@
 - Metadata (list of text key/value pairs - system or user metadata)
 - Tags (unicode key/value pairs)
 - Version ID
+
+## S3 - Security
+- User based
+  - IAM policies
+- Resource based
+  - Bucket policies
+  - Object ACL
+  - Bucket ACL
+- Encryption
+  - Encrypt objects using encryption keys
+
+## S3 Bucket Policies
+- Grant/Deny access to the bucket
+- JSON based policies
+    - Resources : Buckets and Objects
+    - Effect : Allow or Deny
+    - Actions : Set of API to allow or deny
+    - Principal : Account/User to apply the policy
+- Bucket settings for Block Public Access - to prevent company data leaks
+  
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Statement1",
+      "Principal": "*",
+      "Effect": "Allow",
+      "Action": [
+          "s3:PutObject"
+      ],
+      "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/*"
+    }
+  ]
+}
+```
