@@ -56,3 +56,27 @@
   ]
 }
 ```
+
+## S3 - Static Website Hosting
+- Host static websites
+- URL Example : http://`bucket-name`.s3-website.`aws-region`.amazonaws.com
+- 403 Forbidden Error : Make sure the bucket policy allows public access
+
+## S3 - Versioning
+- Add Version to the files
+- Enabled at bucket level
+- Same key overwrite will change the version: 1,2,3.,
+- Protect against unintended deletes
+- Easy roll back
+- Version `null` will be added to files that are added prior to version enabling
+- Suspending versioning will not delete the previous versions
+
+## S3 - Replication
+- Must enable versioning in both source and destination buckets
+- Same Region Replication (SRR)
+- Cross Region Replication (CRR)
+- Copying is Asynchronous
+- Must give proper IAM permissions to S3
+- Use Cases
+  - SRR : Log aggregation, Live replication between production and test accounts
+  - CRR : Low latency Access, Compliance
