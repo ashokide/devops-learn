@@ -124,3 +124,16 @@
 - Ensure the access to S3 buckets
 - Example : Publicly accessible bucket, bucket shared with other AWS account.,
 - Evaluates S3 Bucket Policies, S3 ACLs
+
+## Shared Responsibility Model
+- AWS
+  - Infrastructure
+  - Configuration and Vulnerability Analysis
+  - Compliance
+- Customer
+  - Versioning
+  - Bucket Policies
+  - Replication
+  - Logging and Monitoring
+  - S3 Storage Classes
+  - Data Encryption
