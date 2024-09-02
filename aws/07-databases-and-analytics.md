@@ -133,3 +133,10 @@
 - Join public blockchain networks
 - Create own scalable private network
 - Compatible with Hyperledger Fabric and Ethereum
+
+## AWS Glue
+- Managed Service
+- Serverless
+- Extract, Transform, Load (ETL) Service
+- Prepare and transform data for analytics
+- Glue Data Catalog : Catalog for datasets can be used by Athena, Redshift, EMR
