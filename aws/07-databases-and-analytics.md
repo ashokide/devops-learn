@@ -121,3 +121,9 @@
 - Time series database
 - Store and analyze trillions of events per day
 - Built in time series analytics function
+
+## Amazon Quantum Ledger Database (QLDB)
+- A ledger is a book recording financial transactions
+- Fully Managed, highly available with replication across 3 AZ
+- Immutable System
+- Manipulate data using SQL
