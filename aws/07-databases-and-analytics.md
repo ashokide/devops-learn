@@ -62,3 +62,21 @@
 - Fully managed In-memory cache for DynamoDB
 - Single digit millisecond latency to microseconds latency
 - DAX is only used for DynamoDB
+
+## DynamoDB Global Tables
+- Make accessible with low latency in multi regions
+- Active-Active Replication
+- Read/Write to any regions
+
+## Redshift
+- Based on PostgresSQL
+- Used for Online Analytical Processing (OLAP)
+- Analytics and Data warehousing
+- Scale to PBs of data
+- Columnar storage of data
+- Massively Parallel Query Execution
+
+## Redshift Serverless
+- Run analytics workloads without managing data warehouse infrastructure
+- Automatically provisions and scales data warehouse capacity
+- Use cases: Reporting, Dashboarding applications, Real-time analytics.,
