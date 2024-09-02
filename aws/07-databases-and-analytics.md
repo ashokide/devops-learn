@@ -23,7 +23,7 @@
 ## Amazon Aurora
 - Proprietary technology from AWS
 - Aurora DB supports MySQL, PostgreSQL
-- AWS Cloud Optimized
+- AWS `Cloud Optimized`
 - Storage grows in increments of 10 GB
 
 ## Amazon Aurora Serverless
@@ -59,7 +59,7 @@
 - Single digit milliseconds latency
 
 ## DynamoDB Accelerator - DAX
-- Fully managed In-memory cache for DynamoDB
+- Fully managed `In-memory cache for DynamoDB`
 - Single digit millisecond latency to microseconds latency
 - DAX is only used for DynamoDB
 
@@ -71,7 +71,7 @@
 ## Redshift
 - Based on PostgresSQL
 - Used for Online Analytical Processing (OLAP)
-- Analytics and Data warehousing
+- `Analytics` and `Data warehousing`
 - Scale to PBs of data
 - Columnar storage of data
 - Massively Parallel Query Execution
@@ -82,7 +82,7 @@
 - Use cases: Reporting, Dashboarding applications, Real-time analytics.,
 
 ## Elastic MapReduce (EMR)
-- Create Hadoop Clusters (Big Data)
+- Create `Hadoop Clusters` (Big Data)
 - Analyze and process vast amount of data
 - Clusters are made up of 100's of EC2 instances
 - Supports Apache Spark, HBase, Presto.,
@@ -93,3 +93,10 @@
 - Performs analytics against S3 objects
 - Supports CSV, JSON.,
 - Use Case: Business Intelligence, Analytics, Reporting.,
+
+## Amazon QuickSight
+- Serverless
+- Machine learning powered business intelligence service
+- Create `interactive dashboards`
+- Use Cases: Business Analytics, Visualizations
+- Integrated with Athena, RDS, Aurora, Redshift.,
