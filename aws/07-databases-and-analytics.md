@@ -43,3 +43,8 @@
 - Multi Region (Read Replica's)
   - Local Performace for global needs
   - Disaster recovery incase of region issue
+
+## ElastiCache
+- Managed Redis or Memcached
+- In-memory database with high performance and low latency
+- Reduce load of databases for read intensive workloads
