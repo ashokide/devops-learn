@@ -145,3 +145,6 @@
 - Migrate database to AWS
 - Source database remains available during migration
 - Supports Homogeneous(Oracle to Oracle) and Heterogeneous(Microsoft SQL Server to Aurora) Migration
+
+## Summary 
+<img width="1413" alt="image" src="https://github.com/user-attachments/assets/7f8c395f-9686-457e-89f5-9945cb5a492a">
