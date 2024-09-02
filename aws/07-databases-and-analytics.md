@@ -127,3 +127,9 @@
 - Fully Managed, highly available with replication across 3 AZ
 - Immutable System
 - Manipulate data using SQL
+
+## Amazon Managed Blockchain
+- Decentralized
+- Join public blockchain networks
+- Create own scalable private network
+- Compatible with Hyperledger Fabric and Ethereum
