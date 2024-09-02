@@ -87,3 +87,9 @@
 - Clusters are made up of 100's of EC2 instances
 - Supports Apache Spark, HBase, Presto.,
 - Use Case: Data Processing, Machine Learning.,
+
+## Amazon Athena
+- Serverless query service
+- Performs analytics against S3 objects
+- Supports CSV, JSON.,
+- Use Case: Business Intelligence, Analytics, Reporting.,
