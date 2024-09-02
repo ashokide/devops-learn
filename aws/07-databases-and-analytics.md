@@ -30,3 +30,16 @@
 - Automated database instantiation
 - Auto scaling based on autual usage
 - No capacity planning needed
+
+## RDS Deployments: Read Replicas and Multi AZ
+- Read Replicas
+  - Scale the read workload
+  - Create upto 15 read replicas
+  - Data is only written to Main DB
+- Multi AZ
+  - Failover incase of AZ outage
+  - Data is only read/written to Main database
+  - Can only have 1 other AZ as Failover DB
+- Multi Region (Read Replica's)
+  - Local Performace for global needs
+  - Disaster recovery incase of region issue
