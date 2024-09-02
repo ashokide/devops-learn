@@ -115,3 +115,9 @@
 - Can store upto billions of relations
 - Query the graph with milliseconds latency
 - Use Case: Knowledge Graph, Fraud Detection, Recommendation Engine, Social Networking.,
+
+## Amazon Timestream
+- Fully managed, Serverless
+- Time series database
+- Store and analyze trillions of events per day
+- Built in time series analytics function
