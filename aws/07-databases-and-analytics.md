@@ -48,3 +48,17 @@
 - Managed Redis or Memcached
 - In-memory database with high performance and low latency
 - Reduce load of databases for read intensive workloads
+
+## DynamoDB
+- Key/Value database
+- Primary Key - Partition Key + Sort Key
+- Fully managed, Highly available with replication across 3 AZ
+- NoSQL Database
+- Distributes serverless database
+- Millions of request per second
+- Single digit milliseconds latency
+
+## DynamoDB Accelerator - DAX
+- Fully managed In-memory cache for DynamoDB
+- Single digit millisecond latency to microseconds latency
+- DAX is only used for DynamoDB
