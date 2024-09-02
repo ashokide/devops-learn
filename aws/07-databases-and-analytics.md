@@ -107,3 +107,11 @@
 - Fully managed, highly available with replication across 3 AZ
 - Storage grows in increments of 10 GB
 - Automatically scales to workloads with millions of request per second
+
+## Amazon Neptune
+- Fully managed graph database
+- Highly available with replication across 3 AZ
+- Upto 15 read replicas
+- Can store upto billions of relations
+- Query the graph with milliseconds latency
+- Use Case: Knowledge Graph, Fraud Detection, Recommendation Engine, Social Networking.,
