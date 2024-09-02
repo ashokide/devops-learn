@@ -80,3 +80,10 @@
 - Run analytics workloads without managing data warehouse infrastructure
 - Automatically provisions and scales data warehouse capacity
 - Use cases: Reporting, Dashboarding applications, Real-time analytics.,
+
+## Elastic MapReduce (EMR)
+- Create Hadoop Clusters (Big Data)
+- Analyze and process vast amount of data
+- Clusters are made up of 100's of EC2 instances
+- Supports Apache Spark, HBase, Presto.,
+- Use Case: Data Processing, Machine Learning.,
