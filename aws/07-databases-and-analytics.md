@@ -52,7 +52,7 @@
 ## DynamoDB
 - Key/Value database
 - Primary Key - Partition Key + Sort Key
-- Fully managed, Highly available with replication across 3 AZ
+- Fully managed, highly available with replication across 3 AZ
 - NoSQL Database
 - Distributes serverless database
 - Millions of request per second
@@ -100,3 +100,10 @@
 - Create `interactive dashboards`
 - Use Cases: Business Analytics, Visualizations
 - Integrated with Athena, RDS, Aurora, Redshift.,
+
+## DocumentDB
+- AWS implementation same as MongoDB 
+- Store, query, and index json data
+- Fully managed, highly available with replication across 3 AZ
+- Storage grows in increments of 10 GB
+- Automatically scales to workloads with millions of request per second
