@@ -140,3 +140,8 @@
 - Extract, Transform, Load (ETL) Service
 - Prepare and transform data for analytics
 - Glue Data Catalog : Catalog for datasets can be used by Athena, Redshift, EMR
+
+## Data Migration Service (DMS)
+- Migrate database to AWS
+- Source database remains available during migration
+- Supports Homogeneous(Oracle to Oracle) and Heterogeneous(Microsoft SQL Server to Aurora) Migration
