@@ -19,3 +19,24 @@
 - Private Docker Registry
 - Store Docker Images
 - Stored images can be used by ECS and Fargate
+
+## AWS Lambda
+- Virtual functions - no servers to manage
+- Limited by time - short executions
+- Run on-demand
+- Scaling is automated
+- Pay per request and compute time
+- Integrated with AWS services
+- Event Driven: functions get invoked by AWS
+- Integrated with many programming languages
+- Easy monitoring with AWS CloudWatch
+- Lambda Language Support
+  - Node.js
+  - Python
+  - Custom Runtime API (Community Supported, Golang or Rust)
+- Lambda Container Image
+  - Container image must implement the Lambda Runtime API
+  - ECS/Fargate is preferred for running arbitrary Docker Images
+- Lambda Pricing
+  - Pay per calls
+  - Pay per duration
