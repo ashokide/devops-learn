@@ -9,3 +9,13 @@
 - Launch Docker Container on AWS
 - Must provision and maintain the infrastructure (EC2 Instances)
 - Integration with application load balancer
+
+## Fargate
+- Launch Docker Container on AWS
+- Don't need to provision and maintain the infrastructure (EC2 Instances)
+- Serverless
+
+## Elastic Container Registry (ECR)
+- Private Docker Registry
+- Store Docker Images
+- Stored images can be used by ECS and Fargate
