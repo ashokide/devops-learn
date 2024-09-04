@@ -40,3 +40,7 @@
 - Lambda Pricing
   - Pay per calls
   - Pay per duration
+
+## API Gateway
+## AWS Batch
+## Amazon Lightsail
