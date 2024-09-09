@@ -20,3 +20,10 @@ sudo ufw default deny incoming
 ```
 sudo ufw default allow outgoing
 ```
+
+- List all UFW rules
+```
+# verbose is optional
+sudo ufw status verbose
+```
+
