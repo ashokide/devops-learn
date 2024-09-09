@@ -36,3 +36,13 @@ sudo ufw allow 22
 ```
 sudo ufw allow http
 ```
+
+- Deny incoming traffic on a specific port
+```
+sudo ufw deny 80
+```
+
+- Deny incoming traffic on a specific service
+```
+sudo ufw deny http
+```
