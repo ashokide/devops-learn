@@ -27,3 +27,12 @@ sudo ufw default allow outgoing
 sudo ufw status verbose
 ```
 
+- Allow incoming traffic on a specific port
+```
+sudo ufw allow 22
+```
+
+- Allow incoming traffic on a specific service
+```
+sudo ufw allow http
+```
