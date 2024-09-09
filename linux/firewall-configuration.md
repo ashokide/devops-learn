@@ -46,3 +46,9 @@ sudo ufw deny 80
 ```
 sudo ufw deny http
 ```
+
+- Delete a UFW rule
+```
+# allow/deny rule
+sudo ufw delete allow http
+```
