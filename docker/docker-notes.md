@@ -251,6 +251,9 @@ Example
 USER root
 ```
 
+> [!NOTE]
+> Remember, if you don’t set a USER in your Dockerfile, the user will default to root.
+
 ## Build Docker image
 ```
 # .(period) refers to the context (folder) containing the files
