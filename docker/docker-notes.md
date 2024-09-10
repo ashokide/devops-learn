@@ -241,6 +241,16 @@ Example
 ENV 9000
 ```
 
+#### `USER` defines the user that will run commands when building an image and running a container
+```
+USER <username>
+```
+
+Example
+```
+USER root
+```
+
 ## Build Docker image
 ```
 # .(period) refers to the context (folder) containing the files
