@@ -99,13 +99,13 @@
   - Low cost object storage meant for archiving/backup
   - Price for storage and object retrieval cost
   - Types
-    - S3 Galcier Instant Retrieval
+    - S3 Glacier Instant Retrieval
       - Millisecond retrieval, great for data accessed once a quarter
       - Minimum storage duration of 90 days
-    - S3 Galcier Flexible Retrieval
+    - S3 Glacier Flexible Retrieval
       - Expedited(1 to 5 minutes), Standard (3 to 4 hours), Bulk (5 to 12 hours)
       - Minimum storage duration of 90 days
-    - S3 Galcier Deep Archive
+    - S3 Glacier Deep Archive
       - Standard (12 hours), Bulk (48 hours)
       - Minimum storage duration of 180 days
 - S3 Intelligent Tiering
