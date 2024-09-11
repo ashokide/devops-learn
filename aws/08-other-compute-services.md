@@ -48,4 +48,10 @@
 - Proxy Requests
   
 ## AWS Batch
+- Batch processing at any scale
+- Run 100000's computing batch jobs
+- A batch job is a job with a start and an end
+- Batch will dynamically launch EC2 instances or Spot instances
+- Batch jobs are defined as Docker Images and runs on ECS
+  
 ## Amazon Lightsail
