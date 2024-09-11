@@ -53,5 +53,17 @@
 - A batch job is a job with a start and an end
 - Batch will dynamically launch EC2 instances or Spot instances
 - Batch jobs are defined as Docker Images and runs on ECS
-  
+
+## AWS Lambda vs AWS Batch
+- Lambda
+  - Time limit
+  - Limited runtime
+  - Limited temporary disk space
+  - Serverless
+- Batch
+  - No time limit
+  - Any runtime
+  - Relies on EBS/Instance store
+  - Relies on EC2
+
 ## Amazon Lightsail
