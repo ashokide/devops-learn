@@ -67,3 +67,9 @@
   - Relies on EC2
 
 ## Amazon Lightsail
+- Virtual servers, Storage, Databases and Networking
+- Low and predictable pricing
+- Simple alternative to using EC2, RDS, EBS.,
+- Great for people with little cloud experience
+- High availability but no auto scaling
+- Limited AWS integrations
