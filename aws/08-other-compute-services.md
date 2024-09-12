@@ -42,6 +42,7 @@
   - Pay per duration
 
 ## API Gateway
+- Expose Lambda Functions as HTTP API
 - Create, Publish, Maintain, Monitor, and Secure APIs
 - Fully Managed, Serverless
 - Supports RESTful APIs and WebSocket APIs
