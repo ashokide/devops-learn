@@ -23,6 +23,7 @@
 ## AWS Lambda
 - Virtual functions - no servers to manage
 - Limited by time - short executions
+- Invocation time upto 15 minutes
 - Run on-demand
 - Scaling is automated
 - Pay per request and compute time
