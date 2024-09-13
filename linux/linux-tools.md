@@ -35,3 +35,6 @@ sudo tailscale up
 ```sh
 tailscale ip -4
 ```
+
+> [!TIP]
+> To know more, Visit : https://tailscale.com/download/linux
