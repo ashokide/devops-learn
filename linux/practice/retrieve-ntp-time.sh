@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # NTP server to get time
 NTP_SERVER="time.google.com"
