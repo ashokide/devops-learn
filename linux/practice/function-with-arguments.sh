@@ -13,7 +13,7 @@ check_sudo_access() {
 
 check_sudo_access
 
-# function with and without argument
+# function with argument
 hello_world() {
   # Check if an argument is provided
   if [ $# -eq 0 ]; then
