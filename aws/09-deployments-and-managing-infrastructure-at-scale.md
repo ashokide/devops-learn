@@ -71,3 +71,9 @@ Resources:
 - Run commands across the fleet of servers
 - Store parameter configuration with SSM Parameter Store
 - Uses SSM Agent to control
+
+## AWS Systems Manager - SSM Session Manager
+- Secure shell on EC2 and on-premise servers
+- No SSH access, SSH keys, bastion host needed
+- No need of Port 22 exposing
+- Send session logs data to S3 or CloudWatch logs
