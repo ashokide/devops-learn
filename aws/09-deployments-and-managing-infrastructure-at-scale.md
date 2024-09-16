@@ -56,3 +56,9 @@ Resources:
 - Basis of CICD (Continuous Integration and Continuous Delivery)
 - Orchestrate the different steps to have the code automatically pushed to production
 - Code => Build => Test => Deploy
+
+## AWS CodeArtifact
+- Software packages depends on each other to be built
+- Storing and Retrieving dependencies
+- Artifact Management
+- Works with common dependency management tools such as Maven, Gradle, etc.,
