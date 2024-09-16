@@ -40,3 +40,9 @@ Resources:
 - Works with EC2, On-premise Servers
 - Hybrid Service
 - CodeDeploy Agent
+
+## AWS CodeCommit
+- Fully managed source control repository
+- Collaborate with others on code
+- Code changes are automatically versioned
+- Private, Integrated with AWS
