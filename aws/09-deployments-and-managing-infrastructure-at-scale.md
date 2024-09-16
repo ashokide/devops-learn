@@ -25,3 +25,12 @@ Resources:
 - Code is compiled to Cloud Formation Template (JSON/YAML)
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/9482f05e-6a81-4726-8e51-fa072682cc6d">
+
+## AWS Elastic Beanstalk
+- Platform as a Service (PaaS)
+- Developer centric view of deploying an application
+- Managed Service
+  - Instance Configuration/OS
+  - Capacity Provisioning
+  - Load Balancing/Auto Scaling
+  - Application Health Monitoring
