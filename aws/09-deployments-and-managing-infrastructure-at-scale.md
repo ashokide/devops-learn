@@ -51,3 +51,8 @@ Resources:
 - Code building service
 - Compiles source code, run tests, and produce packages
 - Only pay for the build time
+
+## AWS CodePipeline
+- Basis of CICD (Continuous Integration and Continuous Delivery)
+- Orchestrate the different steps to have the code automatically pushed to production
+- Code => Build => Test => Deploy
