@@ -46,3 +46,8 @@ Resources:
 - Collaborate with others on code
 - Code changes are automatically versioned
 - Private, Integrated with AWS
+
+## AWS CodeBuild
+- Code building service
+- Compiles source code, run tests, and produce packages
+- Only pay for the build time
