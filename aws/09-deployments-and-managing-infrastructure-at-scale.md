@@ -77,3 +77,8 @@ Resources:
 - No SSH access, SSH keys, bastion host needed
 - No need of Port 22 exposing
 - Send session logs data to S3 or CloudWatch logs
+
+## AWS Systems Manager - Parameter Store
+- Secure storage for configurations and secrets
+- API Keys, Passwords, Configurations, etc.,
+- Control access permissions using IAM
