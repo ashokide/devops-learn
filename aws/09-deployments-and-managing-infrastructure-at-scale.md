@@ -62,3 +62,12 @@ Resources:
 - Storing and Retrieving dependencies
 - Artifact Management
 - Works with common dependency management tools such as Maven, Gradle, etc.,
+
+## AWS Systems Manager (SSM)
+- Manage on-premises and EC2 instances at scale
+- Hybrid AWS service
+- Get operational insights about the state of the infrastructure
+- Patching automation
+- Run commands across the fleet of servers
+- Store parameter configuration with SSM Parameter Store
+- Uses SSM Agent to control
