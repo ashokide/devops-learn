@@ -1,11 +1,11 @@
 ## Cloud Formation
 - Infrastructure as a Code (IaaC)
-- declarative way of outlining AWS infrastructure
+- Declarative way of outlining AWS infrastructure
 - Cloud Formation Template
 
 ## Application Composer
-- relations between components
-- visually compose and configure AWS services
+- Relations between components
+- Visually compose and configure AWS services
 
 ## Cloud Formation Template
 ```yaml
@@ -19,3 +19,9 @@ Resources:
       ImageId: ami-0d5eff06f840b45e9 # ImageID valid only in us-east-1 region
       InstanceType: t2.micro
 ```
+
+## AWS Cloud Development Kit (CDK)
+- Define cloud infrastructure using familiar language (Python, Javascript, etc.,)
+- Code is compiled to Cloud Formation Template (JSON/YAML)
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/9482f05e-6a81-4726-8e51-fa072682cc6d">
