@@ -34,3 +34,9 @@ Resources:
   - Capacity Provisioning
   - Load Balancing/Auto Scaling
   - Application Health Monitoring
+
+## AWS CodeDeploy
+- Deploy application automatically
+- Works with EC2, On-premise Servers
+- Hybrid Service
+- CodeDeploy Agent
