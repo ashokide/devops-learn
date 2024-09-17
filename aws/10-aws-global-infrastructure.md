@@ -47,4 +47,5 @@
 ## CloudFront vs S3 Cross Origin Replication
 - CloudFront
   - Global edge network
-  - Files are cached
+  - Files are cached for a TTL
+  - Great for static content
