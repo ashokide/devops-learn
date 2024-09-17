@@ -43,3 +43,8 @@
     - EC2 instance
     - S3 Website (Static S3 Website)
     - Any HTTP backend
+
+## CloudFront vs S3 Cross Origin Replication
+- CloudFront
+  - Global edge network
+  - Files are cached
