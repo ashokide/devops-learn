@@ -48,4 +48,10 @@
 - CloudFront
   - Global edge network
   - Files are cached for a TTL
-  - Great for static content
+  - Great for static content that must be available everywhere
+
+- S3 Cross Origin Replication
+  - Setup for each region
+  - Files are updated for realtime
+  - Read only
+  - Great for dynamic content that needs to be available at low latency in few regions
