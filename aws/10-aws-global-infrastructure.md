@@ -26,3 +26,20 @@
   - Failover Routing Policy
     - Health checks on primary
     - Disaster recovery
+
+## CloudFront
+- Content Delivery Network (CDN)
+- Improves read performance and content is cached at edge
+- DDoS protection
+- Integration with Shield, AWS Web Application Firewall
+
+### CloudFront Origins
+  - S3 Bucket
+    - For distributing files and caching them at the edge
+    - Enhanced security with CloudFront Origin Access Control (OAC)
+    - Can be used as an ingress (to upload files to S3)
+  - Custom Origin (HTTP)
+    - Application Load Balancer
+    - EC2 instance
+    - S3 Website (Static S3 Website)
+    - Any HTTP backend
