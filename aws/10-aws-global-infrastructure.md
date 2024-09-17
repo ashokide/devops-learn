@@ -11,3 +11,8 @@
   - Made of multiple data centers
 - Edge Locations (Points of Presence)
   - For content delivery as close as possible to users
+
+## Route53
+- Manager DNS (Domain Name System)
+- Collection of rules and records
+- Most common records - A, AAAA, CNAME, ALIAS
