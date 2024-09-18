@@ -65,3 +65,12 @@
 - Leverage the AWS internal network to optimize the route
 - Traffic is sent through Edge Locations
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/dc9528dd-b82e-44a3-a6a4-e276c8cc45d0">
+
+## CloudFront vs Global Accelerator
+- Both uses AWS global network and its edge locations
+- Both services integrate with AWS Shield for DDoS protection
+- CloudFront
+  - Improves performance for cacheable content
+  - Content is served at the edge
+- Global Accelerator
+  - No caching, proxying packets at the edge to applications
