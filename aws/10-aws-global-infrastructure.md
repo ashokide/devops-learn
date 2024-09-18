@@ -74,3 +74,13 @@
   - Content is served at the edge
 - Global Accelerator
   - No caching, proxying packets at the edge to applications
+
+## AWS Outposts
+- Hybrid cloud (on-premises + cloud infrastructure)
+- Server racks that offers the same AWS infrastructure, services, APIs and tools on on-premises just as in the cloud
+- AWS will setup and manage outposts racks within on-premises infrastructure
+- Responsible for outposts rack physical security
+- Benefits
+  - Low latency
+  - Local data processing
+  - Services that work on outposts rack such as EC2, EBS, S3, ECS, EKS, RDS, etc., 
