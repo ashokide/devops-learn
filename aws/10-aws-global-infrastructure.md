@@ -90,3 +90,13 @@
 - Bring AWS services to the edge of the 5G networks
 - Ultra low latency applications through 5G networks
 - Use Cases: Smart Cities, Connected Vehicles, Interactive Live Video Streams, etc., 
+
+## AWS Local Zones
+- Places selected AWS services closer to end users to run latency sensitive applications
+- Extend VPC to more locations (Extension of an AWS region)
+- Compatible with EC2, RDS, ECS, Elasticache, etc.,
+- Example
+  - AWS Region: Asia Pacific (Mumbai) ap-south-1
+  - AWS Local Zones:
+    - India (Kolkata) ap-south-1-ccu-1a
+    - India (Delhi) ap-south-1-del-1
