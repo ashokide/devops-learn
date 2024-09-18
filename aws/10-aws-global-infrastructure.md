@@ -84,3 +84,9 @@
   - Low latency
   - Local data processing
   - Services that work on outposts rack such as EC2, EBS, S3, ECS, EKS, RDS, etc., 
+
+## AWS Wavelength Zones
+- Infrastructure deployments embedded within the telecommunication providers datacenters at the edge of 5G networks
+- Bring AWS services to the edge of the 5G networks
+- Ultra low latency applications through 5G networks
+- Use Cases: Smart Cities, Connected Vehicles, Interactive Live Video Streams, etc., 
