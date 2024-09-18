@@ -100,3 +100,27 @@
   - AWS Local Zones:
     - India (Kolkata) ap-south-1-ccu-1a
     - India (Delhi) ap-south-1-del-1
+
+## Global Application Architecture
+- Single Region, Single Availability Zone
+  - High Availability ❌
+  - Global Latency ❌
+  - Difficulty (Low)
+
+- Single Region, Multi Availability Zone
+  - Availability ✅
+  - Global Latency ❌
+  - Difficulty (Medium)
+    
+- Multi Region, Active-Passive
+  - Active - Read and Write
+  - Passive - Read
+  - Global Read Latency ✅
+  - Global Write Latency ❌
+  - Difficulty (High)
+
+- Multi Region, Active-Active
+  - Active - Read and Write
+  - Global Read Latency ✅
+  - Global Write Latency ✅
+  - Difficulty (Very High)
