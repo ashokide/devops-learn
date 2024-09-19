@@ -46,3 +46,10 @@
 - Amazon MQ doesn't scale as much as SQS, SNS
 - Amazon MQ runs on servers, can run in multi-az with failover
 - Amazon MQ has both queue feature (SQS) and topic features (SNS)
+
+## Amazon CloudWatch Metrics
+- Provides metrics for every services for AWS
+- Metric is a variable to monitor (CPUUtilization, Network)
+- Metrics have timestamps
+- CloudWatch dashboards for metrics
+- CloudWatch Billing Metric (only in us-east-1)
