@@ -31,3 +31,9 @@
 - Kinesis Video Streams - monitor real-time video streams for analytics or ML
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/f07381f9-b96c-4a10-9381-f4ffe59cdd39">
+
+## Amazon SNS (Simple Notification Service)
+- Event publishers only sends message to one SNS topic
+- Event subscribers listen to the SNS topic notifications
+- Each subscriber subscribed to the topic will get all the messages
+- Upto 12,500,000 subscriptions per topic, 100,000 topics limit
