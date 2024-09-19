@@ -53,3 +53,13 @@
 - Metrics have timestamps
 - CloudWatch dashboards for metrics
 - CloudWatch Billing Metric (only in us-east-1)
+
+## Amazon CloudWatch Alarms
+- Alarms are used to trigger notifications for any metric
+- Alarm Actions
+  - Auto Scaling - Increase or decrease EC2 instances "desired" count
+  - EC2 Actions - stop, terminate, reboot, or recover an EC2 instance
+  - SNS Notifications - send a notification into an SNS topic
+- Example
+  - Create a billing alarm on the cloudwatch billing metric
+  - Alarm States: OK.INSUFFICIENT_DATA, ALARM
