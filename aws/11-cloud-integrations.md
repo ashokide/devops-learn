@@ -6,3 +6,13 @@
 - SQS: Queue Model
 - SNS: Pub/Sub Model
 - Kinesis: Real-Time Data Streaming Model
+
+## Simple Queue Service (SQS)
+### Amazon SQS - Standard Queue
+- Fully managed service
+- Serverless
+- Used to decouple applications
+- Default retention of messages: 4 days to maximum of 14 days
+- No message limit in queue
+- Messages are deleted after they're read by consumers
+- Low latency (< 10ms on publish and receive)
