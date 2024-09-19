@@ -29,3 +29,5 @@
 - Kinesis Data Firehose - Load streams into S3, Redshift, ElastiSearch, etc.,
 - Kinesis Data Analytics - real-time analytics on streams using SQL
 - Kinesis Video Streams - monitor real-time video streams for analytics or ML
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/f07381f9-b96c-4a10-9381-f4ffe59cdd39">
