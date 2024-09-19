@@ -16,3 +16,7 @@
 - No message limit in queue
 - Messages are deleted after they're read by consumers
 - Low latency (< 10ms on publish and receive)
+
+### Amazon SQS - FIFO Queue
+- FIFO - First In First Out (ordering of messages in the queue)
+- Messages are processed in order by the consumer
