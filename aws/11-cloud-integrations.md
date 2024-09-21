@@ -63,3 +63,6 @@
 - Example
   - Create a billing alarm on the cloudwatch billing metric
   - Alarm States: OK.INSUFFICIENT_DATA, ALARM
+
+## CloudWatch Logs
+## EventBridge (CloudWatch Events)
