@@ -69,3 +69,4 @@
 ## CloudTrail
 ## X-Ray
 ## CodeGuru
+## AWS Health Dashboard
