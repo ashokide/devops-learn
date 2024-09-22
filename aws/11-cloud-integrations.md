@@ -66,3 +66,6 @@
 
 ## CloudWatch Logs
 ## EventBridge (CloudWatch Events)
+## CloudTrail
+## X-Ray
+## CodeGuru
