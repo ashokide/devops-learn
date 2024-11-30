@@ -362,7 +362,7 @@ systemctl list-units
 #### 30) `journalctl` -> view system service logs using systemd journal
 ```sh
 # -u unit (sshd, apache2, etc., )
-# -p priority (warning, error, info)
+# -p priority (emerg, alert, crit, err, warning, notice, info, debug)
 
 journalctl -u sshd -p info
 ```
