@@ -238,7 +238,7 @@ Host <name-to-machine>
 ```sh
 # -i identity file
 # -r copy directory files recursively
-scp -i <private-key> <username>@<host-address>:<path-to-store-file>
+scp -i <private-key> <file/directory-to-be-copied> <username>@<host-address>:<path-to-store-file>
 ```
 
 #### 23) `rsync` -> copy and sync files between systems
